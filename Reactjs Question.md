@@ -268,11 +268,28 @@ https://stackoverflow.com/questions/34958775/why-should-objects-in-redux-be-immu
 
 
 ### How do you fetch data in react ?
+
+---
+
 ### What are redux middleware ?
+
+---
+
 ### What is server side rendering ?
+
+---
+
 ### What are different request libraries you are familiar with ?
 https://dzone.com/articles/top-javascript-libraries-for-making-ajax-calls
 
+---
+
 ### What is webpack-dev-server ?
+
+---
+
 ### What are loaders in webpack ?
-### What is babel  and how do you configure ?
+
+---
+
+### What is babel and how do you configure ?
