@@ -266,6 +266,7 @@ In redux State management,  Reducers are pure functions that means, they take th
 As I say new state, they do not change the existing state. In Reducer, we create new state taking the parts of existing state and optional payload from action and create a new state, 
 https://stackoverflow.com/questions/34958775/why-should-objects-in-redux-be-immutable
 
+---
 
 ### How do you fetch data in react ?
 
