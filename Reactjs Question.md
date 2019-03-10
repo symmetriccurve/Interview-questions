@@ -12,30 +12,30 @@ On INITIALIZATION PHASE we have:
 Constructor if you are using ES6 Syntax or getInitialState if using ES5 Syntax 
 	This sets the initial state of the component
 
-ComponentWillMount 
+**ComponentWillMount**
 	We use this to update the state even before UI Elements shows up on DOM
 
-Render
+**Render**
 	The return of this function is what is seen on the UI, it returns Views wrapped inside a single div( Follow up Question: What do you mean by single div, can we not return multiple divs, go to (1A) )
 
 On the UPDATING PHASE we have:
 
-ComponentWillReceiveProps
+**ComponentWillReceiveProps**
 	Everytime a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
 
-ShouldComponentUpdate
+**ShouldComponentUpdate**
 	This component life cycle when used appropriately will avoid any unnecessary renders of the component(Follow up Question: What do you mean by unnecessary renders), depending on the business logic it might return true or false, if it returns true a render will be triggered, if not render is avoided.
 
-ComponentWillUpdate
+**ComponentWillUpdate**
 	If ShouldComponentUpdate returns true componentWillUpdate is triggered
 
-Render
+**Render**
 ComponentDidUpdate
 	ComponentDidUpdate is called after the Render
 
 On the UNMOUNTING PHASE we have:
 
-ComponentWillMount
+**ComponentWillMount**
 	Is called when component is about to be unmounted from DOM
 
 
