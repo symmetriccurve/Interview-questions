@@ -1,9 +1,7 @@
 
-### What do you understand by Component Life Cycle in React ? (M)
-### Explain Component Life Cycle in React ? (M)
-
 ###### Almost all the interview questions are based on component life cycles
 
+### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
 Every component in react undergoes three phases, 
 Initialization phase, updating phase, unmounting phase.
 
@@ -18,7 +16,7 @@ Constructor if you are using ES6 Syntax or getInitialState if using ES5 Syntax
 **Render**
 	The return of this function is what is seen on the UI, it returns Views wrapped inside a single div( Follow up Question: What do you mean by single div, can we not return multiple divs, go to (1A) )
 
-On the UPDATING PHASE we have:
+On the ___UPDATING PHASE___ we have:
 
 **ComponentWillReceiveProps**
 	Everytime a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
@@ -29,11 +27,10 @@ On the UPDATING PHASE we have:
 **ComponentWillUpdate**
 	If ShouldComponentUpdate returns true componentWillUpdate is triggered
 
-**Render**
-ComponentDidUpdate
+**ComponentDidUpdate**
 	ComponentDidUpdate is called after the Render
 
-On the UNMOUNTING PHASE we have:
+___On the UNMOUNTING PHASE___ we have:
 
 **ComponentWillMount**
 	Is called when component is about to be unmounted from DOM
