@@ -251,14 +251,15 @@ I will use React as I’m more comfortable in react, I will able to better archi
 ---
 
 ### How do you style react components ?
-
+React components are styled in the same way a regular html is styled but instead of using class keyword which is reserved keyword in javascript, a __className__(notice the camel case) is used
 https://www.menubar.io/5-ways-to-style-react-components
 
 ---
 
-### What do you bundle react code ?
-Using bundle builders like webpack and parcel
+### What do you bundle react application ?
+Using bundle builders like [webpack](https://codebrahma.com/deploy-react-application-depth-overview-various-options-deploy/) and [parcel](https://medium.freecodecamp.org/how-to-use-parcel-to-bundle-your-react-js-application-d023979e9fe4?gi=31620cf1dfb9)
 
+---
 
 ### what is  immutable means in store ?
 
