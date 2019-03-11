@@ -1,15 +1,15 @@
 
 ### What is Async and Await ?
-Await keyword is valid only inside a Async function. Async is a function and await always followed by a promise.
+**Await** keyword is valid only inside a Async function. Async is a function and await always followed by a promise.
 
-Async and await helps the write the asynchronous programming in synchronous way, for better readability and maintainability. 
-	We can avoid callbacks and use a await that would return the promise and we can add more awaits to resolve the promises until we have the required format of data(like JSON.)
+**Async** and **Await** helps the write the asynchronous programming in synchronous way, for better readability and maintainability. 
+We can avoid callbacks and use a await that would return the promise and we can add more awaits to resolve the promises until we have the required format of data(like JSON.)
 
 Example:
 
 ```javascript
 Async function getData(){
-     var response = await fetch(‘https://sampleApi.com/sample)
+     var response = await fetch(‘https://sampleApi.com/sample')
      var  responseJson = await response.json()
      console.log(responseJson) 
    /*Look how code flows synchronous way but this asynchronous */
