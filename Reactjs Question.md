@@ -52,6 +52,16 @@ Is called when component is about to be unmounted from DOM
 
 A state is nothing but a javascript object to determine the behaviour of the component, every time a state change happen in fact a prop change happen, a render is triggered or UI is re-rendered. 
 
+Creating a state 
+
+```
+constructor(){
+  super()
+  this.state = {
+	//state goes here
+   }
+ }
+```
 ---
 
 ### Why to use React if there are so many frameworks available in the market ?
