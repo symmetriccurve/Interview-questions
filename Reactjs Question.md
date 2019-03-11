@@ -55,6 +55,7 @@ A state is nothing but a javascript object to determine the behaviour of the com
 Creating a state 
 
 ```javascript
+
 constructor(){
   super()
   this.state = {
@@ -62,6 +63,7 @@ constructor(){
    }
  }
 ```
+
 ---
 
 ### Why to use React if there are so many frameworks available in the market ?
