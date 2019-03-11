@@ -54,7 +54,7 @@ A state is nothing but a javascript object to determine the behaviour of the com
 
 Creating a state 
 
-```jsx
+```javascript
 constructor(){
   super()
   this.state = {
