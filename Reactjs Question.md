@@ -7,11 +7,8 @@ Initialization phase, updating phase, unmounting phase.
 
 ___On INITIALIZATION PHASE we have:___
 
-```Constructor``` Using ES6 Syntax  
-
-OR
-
-```getInitialState``` Using ES5 Syntax  
+	Constructor  //Using ES6 Syntax
+	getInitialState // Using ES5 Syntax
 
 Both of this methods sets the initial state of the component
 
