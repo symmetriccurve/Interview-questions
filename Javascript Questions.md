@@ -19,7 +19,38 @@ Async function getData(){
 
 ---
 
-### What is Dependency Injection ?
+### What is scope in javascript ?
+
+---
+
+### What is context in javascript ?
+
+---
+
+### What are event bubbling and event capture ?
+
+---
+
+### What are some desing pattern you are familiar with ?
+
+---
+
+### What is the of object ?
+
+---
+
+### What is the output of the following code and why ?
+
+```javascript
+
+for (i = 1; i <= 5; ++i) {
+  setTimeout(function(){
+    console.log(i);
+  }, 1000);
+}
+```
+
+[Answer](https://coderwall.com/p/_ppzrw/be-careful-with-settimeout-in-loops)
 
 ---
 
