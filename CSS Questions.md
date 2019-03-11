@@ -63,7 +63,3 @@
 ---
 
 ### Are you familiar with Sass/Scss ?
-
-
-
-
