@@ -161,6 +161,35 @@ If it is required to mutate the props, pass a function to mutate the data in the
 https://stackoverflow.com/questions/27643504/react-js-warning-dont-set-the-props-property-of-the-component-mutate-the-exis
 
 ---
+### How to pass the data from child back to parent ?
+Data is passed from child to parent through callback functions.
+Similiar to passing the props from the parent to child, a function is passed as prop to the child and child triggers the function with arguments which are passed to the parent
+
+```
+//parent
+
+functionToBePassedAsPropToChild(dataFromTheChild){
+ console.log(dataFromTheChild) //'This is data from the child'
+}
+
+render(){
+  return (
+    <Child functionFromParent={(dataFromTheChild)=>functionToBePassedAsPropToChild(dataFromTheChild)} />
+  )
+}
+
+```
+
+Calling the function from the child which is a prop
+
+```
+//child
+handleButtonClickOnChild(){
+  const dataTobePassedToParent = 'This is data from the child'
+  this.props.functionFromParent(dataTobePassedToParent)
+}
+```
+---
 
 ### Can we pass a react component as props to child react component?
 
