@@ -340,4 +340,44 @@ https://dzone.com/articles/top-javascript-libraries-for-making-ajax-calls
 
 ---
 
+### What are hooks ?
+
+---
+
+### When do you use functional components vs class based components ?
+
+---
+
+### What are propTypes and defaultProps OR How to validate the props ?
+
+---
+
+### What are synthetic events in react ?
+
+---
+
+### What is a functional component ?
+
+---
+
+### What is React.memo ?
+
+---
+
+### What is webpack ?
+
+---
+
+### How to deploy a react application ?
+
+---
+
+### Which framework do you use to unit-test react component ?
+
+---
+
+### Can you write a sample test case to test if a component is rendering the props ?
+
+---
+
 ### What is babel and how do you configure ?
