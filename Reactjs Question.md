@@ -165,8 +165,8 @@ https://stackoverflow.com/questions/27643504/react-js-warning-dont-set-the-props
 Data is passed from child to parent through callback functions.
 Similiar to passing the props from the parent to child, a function is passed as prop to the child and child triggers the function with arguments which are passed to the parent
 
-```
-//parent
+```javascript
+//in parent
 
 functionToBePassedAsPropToChild(dataFromTheChild){
  console.log(dataFromTheChild) //'This is data from the child'
@@ -182,8 +182,9 @@ render(){
 
 Calling the function from the child which is a prop
 
-```
-//child
+```javascript
+//in child
+
 handleButtonClickOnChild(){
   const dataTobePassedToParent = 'This is data from the child'
   this.props.functionFromParent(dataTobePassedToParent)
