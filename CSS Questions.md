@@ -63,3 +63,27 @@
 ---
 
 ### Are you familiar with Sass/Scss ?
+
+---
+
+### Difference between SVG and Canvas ? 
+
+---
+
+### Difference between block level vs Inline Elements
+
+---
+
+### What are psedo: selectors ?
+
+---
+
+### How to do you know the Device width on which app is shown ?
+
+---
+
+### How do you differentiate a touch based vs non touch based devices ?
+
+---
+
+### How do you customize bootstrap before you start development ?
