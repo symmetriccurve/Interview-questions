@@ -17,7 +17,8 @@ Both of this methods sets the initial state of the component
 ComponentWillMount
 ```
 
- We use this to update the state even before UI Elements shows up on DOM
+_This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
+We use this to update the state even before UI Elements shows up on DOM
  
 ```javascript
 Render
@@ -31,7 +32,14 @@ On the ___UPDATING PHASE___ we have:
 ComponentWillReceiveProps
 ```
 
+_This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
 Everytime a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
+
+```javascript
+getDerivedStateFromProps
+```
+
+This component life cycle is the new addition **React 16.3**, this behaves a as combination of componentWillMouunt and ComponentWillReceiveProps, means this component life cycle is trigger both on the initial render and subsequent renders
 
 ```javascript
 ShouldComponentUpdate
@@ -42,7 +50,7 @@ This component life cycle when used appropriately will avoid any unnecessary ren
 ```javascript
 ComponentWillUpdate
 ```
-
+_This is a depricated component life cycle_ .
 If ShouldComponentUpdate returns true componentWillUpdate is triggered
 
 ```javascript
@@ -58,6 +66,13 @@ ComponentWillUnmount
 ```
 
 Is called when component is about to be unmounted from DOM
+
+
+``` javascript
+ComponentDidCatch()
+```
+
+This is a interesting component life cycle and is only triggered if the component fails to render and showing a fallback ui.
 
 ---
 
