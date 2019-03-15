@@ -438,6 +438,7 @@ A functional component always renders when a parent renders even when props does
 ---
 
 ### What is webpack ?
+Webpack is bundler which take all the source code and [bundles into equivalent minified version](https://medium.freecodecamp.org/how-to-build-modern-applications-with-webpack-c81ccf6dd54f). There are lot of features of webpack like code-splitting, uglification 
 
 ---
 
@@ -451,8 +452,21 @@ Enzyme and Jest
 ---
 
 ### Can you write a sample test case to test if a component is rendering the props ?
-Let's say you want to test if a input is respo
+Let's say you want to test if a component is rendering a  2 input fields on a login page 
+
+```javascript
+
+describe('<MyComponent />', () => {
+  it('renders input field', () => {
+    const wrapper = shallow(<MyComponent />);
+    expect(wrapper.find(<input />)).to.have.lengthOf(2);
+  });
+}
+
+```
 
 ---
 
 ### What is babel and how do you configure ?
+As browsers do not support JSX natively, a transpiler is used to convert JSX to javascript. The Transpiler is the Babel, it is configured using .babelrc file inside the root level of the application.
+
