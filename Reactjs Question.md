@@ -338,7 +338,7 @@ Using bundle builders like [webpack](https://codebrahma.com/deploy-react-applica
 
 ---
 
-### what is  immutable means in store ?
+### what is immutable means in store ?
 
 In redux State management,  Reducers are pure functions that means, they take the existing state as argument and return new state. 
 As I say new state, they do not change the existing state. In Reducer, we create new state taking the parts of existing state and optional payload from action and create a new state, 
@@ -347,6 +347,11 @@ https://stackoverflow.com/questions/34958775/why-should-objects-in-redux-be-immu
 ---
 
 ### How do you fetch data in react ?
+
+With plain react, componentDidMount is the component life cycle where all the API calls go because this is called after the render and any setState after the render will trigger another setState.
+
+Using redux,
+Since API calls are asynchronous, a middleware like redux-thunk or redux-saga is used to make async actions
 
 ---
 
@@ -365,6 +370,10 @@ https://dzone.com/articles/top-javascript-libraries-for-making-ajax-calls
 
 ### What is webpack-dev-server ?
 
+webpack-dev-server is an additional package alongside of webpack, which is a dev dependency. It is used to automatically compile and build the bundle whenever there are changes to the source folder.
+
+It helps during the development to achieve hot-reload
+
 ---
 
 ### What are loaders in webpack ?
@@ -372,6 +381,7 @@ https://dzone.com/articles/top-javascript-libraries-for-making-ajax-calls
 ---
 
 ### What are hooks ?
+React 16.8.0 is the first release to support Hooks. Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
 
 ---
 
