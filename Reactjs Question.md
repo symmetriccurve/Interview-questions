@@ -422,10 +422,18 @@ function Example() {
 ---
 
 ### What is a functional component ?
+A functional component or ES6 stateless components are those whih does not have state and component life cycles like in class component.
+
+It depends on the props and callback functions from the parent
+
+_functional components are also called a presentation components or dumb components_
 
 ---
 
 ### What is React.memo ?
+A functional component always renders when a parent renders even when props does not change. The unnecessary renders can be avoided and add ability to only render when props change can be achieved using react.memo
+
+ _React.memo is equivalent of class pure component_
 
 ---
 
@@ -438,10 +446,12 @@ function Example() {
 ---
 
 ### Which framework do you use to unit-test react component ?
+Enzyme and Jest
 
 ---
 
 ### Can you write a sample test case to test if a component is rendering the props ?
+Let's say you want to test if a input is respo
 
 ---
 
