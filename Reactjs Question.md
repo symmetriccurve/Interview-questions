@@ -11,10 +11,10 @@ ___On INITIALIZATION PHASE we have:___
 Constructor  //Using ES6 Syntax
 getInitialState // Using ES5 Syntax
 ```
-Both of this methods sets the initial state of the component
+Both of this methods sets the initial state of the component, [Read more](https://stackoverflow.com/a/30668609)
 
 ```javascript
-ComponentWillMount
+[ComponentWillMount]
 ```
 
 _This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
