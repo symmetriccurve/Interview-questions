@@ -1,5 +1,7 @@
 
-###### Almost all the interview questions are based on component life cycles
+# This page is constantly updated with new questions and answers(with better examples). Please check back if you are unable find a answer to a question or you can submit a new question [here](https://github.com/symmetriccurve/Interview-questions/issues/new)
+
+---
 
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
 Every component in react undergoes three phases, 
