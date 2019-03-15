@@ -39,7 +39,7 @@ Everytime a component receives new set of props, this component life cycle is tr
 getDerivedStateFromProps
 ```
 
-This component life cycle is the new addition **React 16.3**, this behaves a as combination of componentWillMouunt and ComponentWillReceiveProps, means this component life cycle is trigger both on the initial render and subsequent renders
+This component life cycle is the new addition **React 16.3**, this behaves a as combination of componentWillMount and ComponentWillReceiveProps, means this component life cycle is trigger both on the initial render and subsequent renders
 
 ```javascript
 ShouldComponentUpdate
@@ -51,7 +51,7 @@ This component life cycle when used appropriately will avoid any unnecessary ren
 ComponentWillUpdate
 ```
 _This is a depricated component life cycle_ .
-If ShouldComponentUpdate returns true componentWillUpdate is triggered
+If ShouldComponentUpdate returns _true_ componentWillUpdate is triggered
 
 ```javascript
 ComponentDidUpdate
