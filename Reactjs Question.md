@@ -383,6 +383,28 @@ It helps during the development to achieve hot-reload
 ### What are hooks ?
 React 16.8.0 is the first release to support Hooks. Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
 
+Below is an example of state hook. Usually we cannot use state inside a functional component but below a hook can create a state inside a functional component.
+
+```javascript
+
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+```
+
 ---
 
 ### When do you use functional components vs class based components ?
