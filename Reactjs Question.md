@@ -419,6 +419,7 @@ function Example() {
 
 ### What are synthetic events in react ?
 
+
 ---
 
 ### What is a functional component ?
@@ -443,6 +444,22 @@ Webpack is bundler which take all the source code and [bundles into equivalent m
 ---
 
 ### How to deploy a react application ?
+Like any other web application, react-apps are bundled using bundlers like grunt,gulp or webpack. The bundles are copied to a server from which there are served.
+
+Example: 
+1. Build the bundle using npm run build, this will build the source files and create a folder called build which has all the minified source files and index.html which is pointing to the this bundles.
+
+
+- build
+	- static _// has all the minified files_
+	- index.html _// has base html and script pointing to static files_
+	- assests _// all the images, gif, videos or any_
+- source
+	- components // react components
+- node_modules
+- package.json
+- index.js
+- index.html
 
 ---
 
@@ -451,7 +468,7 @@ Enzyme and Jest
 
 ---
 
-### Can you write a sample test case to test if a component is rendering the props ?
+### Can you write a sample test case ?
 Let's say you want to test if a component is rendering a  2 input fields on a login page 
 
 ```javascript
