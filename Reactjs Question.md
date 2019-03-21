@@ -134,11 +134,20 @@ https://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initia
 
 ComponentWillReceiveProps()
 
+Starting from React 16.3, this component is deprecated and replaced with `getDerivedStateFromProps`, unlike `ComponentWillReceiveProps`, `getDerivedStateFromProps` is called on the initial render.
+
 ---
 
-### How to Optimize renders in React ?(M)
+### How to Optimize renders in React?
 
-It;s know that every time a prop is changed or state is changed inside the component a render method is triggered. ShouldComponentUpdate is LifeCycle method that can be logically used to manage the render cycles, this method can return a true or false logically to avoid a re-render.
+It's know that every time a prop or state is changed, a render method is triggered for a component. `ShouldComponentUpdate`
+is called just before the render on every state or prop change. 
+
+`ShouldComponentUpdate` decides if the component should or should not triger a render. At any point in the component life time `ShouldComponentUpdate` has access to four pieces of data.
+
+`Previous Props, New Props, Previous State and New State`
+
+`ShouldComponentUpdate` can used to logically compare the above values and decide if a render is needed, if needed `ShouldComponentUpdate`should return `true` or else `false`
 
 ---
 
