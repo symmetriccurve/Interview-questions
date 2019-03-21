@@ -1,5 +1,5 @@
 
-# This page is constantly updated with new questions and answers(with better examples). Please check back if you are unable find an answer to a existing question or you can submit a new question [here](https://github.com/symmetriccurve/Interview-questions/issues/new/choose)
+## This page is constantly updated with new questions and answers(with better examples). Please check back if you are unable find an answer to a existing question or you can submit a new question [here](https://github.com/symmetriccurve/Interview-questions/issues/new/choose)
 
 ---
 
@@ -368,9 +368,28 @@ Since API calls are asynchronous, a middleware like redux-thunk or redux-saga is
 
 ### What are redux middleware ?
 
+Middleware are the utility libraries that act in between actions and redux store. Middleware are useful in a lot of use cases like for doing async actions, a thunk of saga middleware is used. To log actions and how stroe is responsind to those actions, a redux logger middleware is used.
+
+Middleware are configure on creation of the store 
+
+```javascript
+
+import { createStore, combineReducers, applyMiddleware } from 'redux'
+
+const sampleApp = combineReducers(reducers)
+const store = createStore(
+  rootReducer
+  applyMiddleware(logger, thunk) // <== Logger, thunk are the middlewares
+)
+
+```
+
+[Learn More](https://redux.js.org/advanced/middleware)
+
 ---
 
 ### What is server side rendering ?
+[Learn More](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4)
 
 ---
 
@@ -427,7 +446,6 @@ function Example() {
 ---
 
 ### What are synthetic events in react ?
-
 
 ---
 
@@ -490,7 +508,6 @@ describe('<MyComponent />', () => {
 }
 
 ```
-
 ---
 
 ### What is babel and how do you configure ?
