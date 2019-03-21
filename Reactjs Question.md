@@ -16,7 +16,7 @@ getInitialState // Using ES5 Syntax
 Both of this methods sets the initial state of the component, [Read more](https://stackoverflow.com/a/30668609)
 
 ```javascript
-[ComponentWillMount]
+ComponentWillMount
 ```
 
 _This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
@@ -162,13 +162,13 @@ http://riotjs.com/
 
 I will allow a style prop to pass into the component, internally I will get the style object you passed into( As you know what styles you need to apply based on the project) and apply to my component. I will add in a default style to component and add a additional check is the style object is passed or not into the component, if not a default style will be applied. I can also parse through the style object you passed from defaultProps and validate for any missing css properties and through you a error or warning depending on how important is the style property.
 
-
 I have login page on which I have a userId textbox and Password textbox and a SignIn button, next to the Password textbox there is a small Eye icon on which if a user click it will show the password as normal text instead of dot or stars etc. How will you able to do this ?
 
 I will have a state variable called showPassword, which is initially set to false. And on the render function on the Input of the password field on type Property I will throw in a ternary operator if showPassword true then return text if not password. and when user clicks on the eye icon, on every click I will negate the showPassword boolean value and also I will also use the same state variable to switch between open eye icon when password is visible and close eye icon when password is hidden.
 
+---
 
-When would you use a Class Component over a Functional Component(Stateless Component)?(M)
+### When would you use a Class Component over a Functional Component(Stateless Component)?
 If I need a state I would use a class component if not If the component solely depends on props passed into it I would use a functional component or ES6 stateless component.
 
 ---
@@ -185,7 +185,7 @@ To know is the setState happen, we can pass in a second argument inside the setS
 ---
 
 ### What are the some of the disadvantage of React ?
-React is just a view library unlike other UI frameworks , and its JSx syntax which is harder to understand for beginners but will be fun when you get the understanding. 
+React is just a view library unlike other UI frameworks , and its JSX syntax which is harder to understand for beginners but will be fun when you get the understanding. 
 
 ---
 
@@ -316,7 +316,6 @@ https://decembersoft.com/posts/whats-the-difference-between-action-and-action-cr
 ---
 
 ### What are the benefits of using functional component vs class components?
-
 https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc
 
 ---
@@ -349,7 +348,7 @@ Using bundle builders like [webpack](https://codebrahma.com/deploy-react-applica
 
 ---
 
-### what is immutable means in store ?
+### What is immutable means in store ?
 
 In redux State management,  Reducers are pure functions that means, they take the existing state as argument and return new state. 
 As I say new state, they do not change the existing state. In Reducer, we create new state taking the parts of existing state and optional payload from action and create a new state, 
@@ -400,9 +399,9 @@ https://dzone.com/articles/top-javascript-libraries-for-making-ajax-calls
 
 ### What is webpack-dev-server ?
 
-webpack-dev-server is an additional package alongside of webpack, which is a dev dependency. It is used to automatically compile and build the bundle whenever there are changes to the source folder.
+`webpack-dev-server` is an additional package alongside of webpack, which is a dev dependency. It is used to automatically compile and build the bundle whenever there are changes to the source folder.
 
-It helps during the development to achieve hot-reload
+It helps during the development to achieve `hot-reload`
 
 ---
 
@@ -411,7 +410,7 @@ It helps during the development to achieve hot-reload
 ---
 
 ### What are hooks ?
-React 16.8.0 is the first release to support Hooks. Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
+`React 16.8.0` is the first release to support Hooks. Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
 
 Below is an example of state hook. Usually we cannot use state inside a functional component but below a hook can create a state inside a functional component.
 
@@ -434,10 +433,6 @@ function Example() {
 }
 
 ```
-
----
-
-### When do you use functional components vs class based components ?
 
 ---
 
