@@ -31,3 +31,7 @@
 --- 
 
 ### What is your idle work environment ?
+
+--- 
+
+### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
