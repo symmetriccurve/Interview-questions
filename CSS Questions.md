@@ -90,4 +90,16 @@
 
 ---
 
-### How do you customize bootstrap before you start development ?
+### In terms of responsive web application, which approach do you use, min-width or max-width ?
+
+---
+
+### What are the benefits of flex-box other than responsiveness ?
+
+---
+
+### What does it mean when I say flex: 1 1 20px?
+
+---
+
+### Which style is effective, when a style object is both inside the media query and outside the media query?
