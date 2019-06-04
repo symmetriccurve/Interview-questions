@@ -2,6 +2,14 @@
 
 ---
 
+### What does HTML action attribute does ? What happen when it is not defined ?
+
+---
+
+### What is the difference between the HTML attribute and DOM property ?
+
+---
+
 ### Javascript,CSS can be added via CDN and local files, which one do you prefer ?
 
 ---
