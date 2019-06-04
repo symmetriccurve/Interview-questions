@@ -116,3 +116,11 @@
 
 ### What CSS combinator do you if you have to select adjacent siblings inside a parent?
 
+---
+
+### Why do you use box-sizing property ?
+
+---
+
+### Do you know about css clearfix ?
+
