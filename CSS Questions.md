@@ -103,3 +103,16 @@
 ---
 
 ### Which style is effective, when a style object is both inside the media query and outside the media query?
+
+---
+
+### How div are aligned if I do inline-block and width 50% on both elements ? Do they wrap, if so why ?
+
+---
+
+### What CSS combinator do you if you have to select direct child of a parent ?
+
+---
+
+### What CSS combinator do you if you have to select adjacent siblings inside a parent?
+
