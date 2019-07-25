@@ -510,3 +510,10 @@ describe('<MyComponent />', () => {
 ### What is babel and how do you configure ?
 As browsers do not support JSX natively, a transpiler is used to convert JSX to javascript. The Transpiler is the Babel, it is configured using .babelrc file inside the root level of the application.
 
+---
+### Why do you prefer React-Native over native development ?
+
+---
+### What are the advantages of using react-native over other hybrid technologies ?
+
+
