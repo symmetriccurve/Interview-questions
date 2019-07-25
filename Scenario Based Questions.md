@@ -1,5 +1,5 @@
 
-### How do you determine if a network call failed based on satus code ?
+### How do you determine if a network call failed based on status code ?
 
 ---
 

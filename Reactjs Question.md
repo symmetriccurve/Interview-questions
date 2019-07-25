@@ -34,8 +34,8 @@ On the ___UPDATING PHASE___ we have:
 ComponentWillReceiveProps
 ```
 
-_This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
-Everytime a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
+_This is a deprecated component life cycle and this is replaced with **getDerivedStateFromProps**_
+Every time a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
 
 ```javascript
 getDerivedStateFromProps
@@ -80,7 +80,7 @@ This is a interesting component life cycle and is only triggered if the componen
 
 ### What is a State in a React ?
 
-A state is nothing but a javascript object to determine the behaviour of the component, every time a state change happen in fact a prop change happen, a render is triggered or UI is re-rendered. 
+A state is nothing but a javascript object to determine the behavior of the component, every time a state change happen in fact a prop change happen, a render is triggered or UI is re-rendered. 
 
 Creating a state 
 
@@ -207,7 +207,7 @@ https://stackoverflow.com/questions/27643504/react-js-warning-dont-set-the-props
 ---
 ### How to pass the data from child back to parent ?
 Data is passed from child to parent through callback functions.
-Similiar to passing the props from the parent to child, a function is passed as prop to the child and child triggers the function with arguments which are passed to the parent
+Similar to passing the props from the parent to child, a function is passed as prop to the child and child triggers the function with arguments which are passed to the parent
 
 ```javascript
 //in parent
@@ -369,7 +369,7 @@ Since API calls are asynchronous, a middleware like redux-thunk or redux-saga is
 
 ### What are redux middleware ?
 
-Middleware are the utility libraries that act in between actions and redux store. Middleware are useful in a lot of use cases like for doing async actions, a thunk of saga middleware is used. To log actions and how stroe is responsind to those actions, a redux logger middleware is used.
+Middleware are the utility libraries that act in between actions and redux store. Middleware are useful in a lot of use cases like for doing async actions, a thunk of saga middleware is used. To log actions and how store is responding to those actions, a redux logger middleware is used.
 
 Middleware are configure on creation of the store 
 
@@ -447,7 +447,7 @@ function Example() {
 ---
 
 ### What is a functional component ?
-A functional component or ES6 stateless components are those whih does not have state and component life cycles like in class component.
+A functional component or ES6 stateless components are those which does not have state and component life cycles like in class component.
 
 It depends on the props and callback functions from the parent
 
@@ -477,7 +477,7 @@ Example:
 - build
 	- static _// has all the minified files_
 	- index.html _// has base html and script pointing to static files_
-	- assests _// all the images, gif, videos or any_
+	- assets _// all the images, gif, videos or any_
 - source
 	- components // react components
 - node_modules
@@ -516,4 +516,18 @@ As browsers do not support JSX natively, a transpiler is used to convert JSX to 
 ---
 ### What are the advantages of using react-native over other hybrid technologies ?
 
+---
+### Did you work on the new component life cycles of reactjs ?
+
+---
+### Do you think react native is a good option to develop games ?
+
+---
+### What is the weirdest thing you discovered while learning react ?
+
+---
+### Is react faster or Angular faster ?
+
+---
+### How do you install/link dependencies in react-native application ?
 

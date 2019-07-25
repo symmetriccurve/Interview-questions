@@ -31,7 +31,23 @@
 --- 
 
 ### What is your idle work environment ?
+### How do you envision your next role should be ?
+### What are you looking for in your next position ?
 
 --- 
 
 ### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
+
+---
+### What is most complex piece of development you did so far ?
+
+---
+### Do you like to work isolated or with a Team ? why ?
+
+---
+### Is there a situation you asked help from the team ? How do you ask help from the team ?
+
+---
+### What is something you learned in your current project that can help you to do better in your next project ?
+
+

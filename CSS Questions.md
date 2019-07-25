@@ -14,11 +14,11 @@
 
 ---
 
-### Are you familiar with BEM (Blcok Element modifier) ?
+### Are you familiar with BEM (Block Element modifier) ?
 
 ---
 
-### What are psedo classes in CSS ?
+### What are pseudo classes in CSS ?
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-### What is the difference between display:none and displaey:hidden ?
+### What is the difference between display:none and display:hidden ?
 
 ---
 
@@ -58,7 +58,7 @@
 
 ---
 
-### How do you collobarate with UI/UX team ?
+### How do you collaborate with UI/UX team ?
 
 --- 
 
@@ -78,7 +78,7 @@
 
 ---
 
-### What are psedo: selectors ?
+### What are pseudo: selectors ?
 
 ---
 
