@@ -1,5 +1,33 @@
 ### Do you have a situation where you disagreed with the team ?
 
+The reasoning behind this question is to understand how do you can take rejections from others and how to react to them, Do you simply quit the job ? or stick along with the wrong decision(in respect to you) and get back to the work.
+
+A lot of times I witnessed experienced developers argue/debate/disagree over patterns again and again, and prove that how their proposed pattern is much cleaner and easier(in terms of understanding and implementing) than others.
+
+*A pattern is nothing but a particular way/process to accomplish(code) a thing(feature). 
+(This pattern I am talking about is not related to design pattern)*
+
+Example: 
+(if you ask me to start a fire without matches)[https://www.artofmanliness.com/articles/9-ways-to-start-a-fire-without-matches/]
+I can choose above of the above ways, all of which have pros and cons. 
+
+Few other common disagreements are around which libraries/tools to be used if this is the first time the company adopting new tool/library. The least discussions happen over naming conventions and folder structures.
+
+*My Answer:*
+I was involved in a application to upgrade dependency versions to latest and increase the performance of the application, the application was build using older versions react and bower dependencies. Few parts of the application used JQuery(the reason the application was slow) and most of it was React. I cleaned up the Jquery part and written equivalent re usable react components. I also added babel into the project hoping I would convince the other developers on start using latest ES6 features.
+
+This was a legacy project and major functionalities are coded by one of the very senior developer of the company using available [react v0.14.4](https://github.com/facebook/react/releases?after=v15.0.0) back in 2016 when react was not that popular. 
+
+There were 6 developers( including me ) in the team and I was able to convince all other developers to start using the ES6 features which can cut down code, but the a senior developer disagreed to say that this will add additional unnecessary complexity in to the project and may have obscure implications so we better stick to the ES5. It took me a week to have prototypes/presentations on how we can better destructure, use arrow function, spread operators and other features of the ES6, but I terribly failed to convince him that this enhances the developer experience and cuts downs number of lines of code. 
+(I brought this up the product owner, but I failed to answer how this brings value to the product since he says developer experience does not count towards the product value) 
+
+I removed the babel integration and sent a PR(Pull Request), he added few comments on the JQuery converted to "ES5 react components", I added the changes accordingly and continued to upgrade the versions and moved all the bower dependencies to npm dependencies. 
+
+
+A follow up question would be, **How did you feel about this ?** or **How long did you work after this incident ?**
+*My Answer:*
+I think may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D 
+
 ---
 
 ### What are few thing you look for when you code review ?
