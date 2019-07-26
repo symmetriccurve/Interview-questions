@@ -9,7 +9,8 @@ A lot of times I witnessed experienced developers argue/debate/disagree over pat
 
 Example: 
 [if you ask me to start a fire without matches](https://www.artofmanliness.com/articles/9-ways-to-start-a-fire-without-matches)
-I can choose above of the above ways, all of which have pros and cons. 
+
+I can choose any of the above ways, all of which have pros and cons. 
 
 Few other common disagreements are around which libraries/tools to be used if this is the first time the company adopting new tool/library. The least discussions happen over naming conventions and folder structures.
 
