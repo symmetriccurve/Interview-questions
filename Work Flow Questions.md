@@ -8,6 +8,7 @@ A lot of times I witnessed experienced developers argue/debate/disagree over pat
 (This pattern I am talking about is not related to design pattern)*
 
 Example: 
+
 [if you ask me to start a fire without matches](https://www.artofmanliness.com/articles/9-ways-to-start-a-fire-without-matches)
 
 I can choose any of the above ways, all of which have pros and cons. 
@@ -15,6 +16,7 @@ I can choose any of the above ways, all of which have pros and cons.
 Few other common disagreements are around which libraries/tools to be used if this is the first time the company adopting new tool/library. The least discussions happen over naming conventions and folder structures.
 
 *My Answer:*
+
 I was involved in a application to upgrade dependency versions to latest and increase the performance of the application, the application was build using older versions react and bower dependencies. Few parts of the application used JQuery(the reason the application was slow) and most of it was React. I cleaned up the Jquery part and written equivalent re usable react components. I also added babel into the project hoping I would convince the other developers on start using latest ES6 features.
 
 This was a legacy project and major functionalities are coded by one of the very senior developer of the company using available [react v0.14.4](https://github.com/facebook/react/releases?after=v15.0.0) back in 2016 when react was not that popular. 
@@ -25,8 +27,12 @@ There were 6 developers( including me ) in the team and I was able to convince a
 I removed the babel integration and sent a PR(Pull Request), he added few comments on the JQuery converted to "ES5 react components", I added the changes accordingly and continued to upgrade the versions and moved all the bower dependencies to npm dependencies. 
 
 
-A follow up question would be, **How did you feel about this ?** or **How long did you work after this incident ?**
+A follow up question would be, 
+**How did you feel about this ?** or 
+**How long did you work after this incident ?**
+
 *My Answer:*
+
 I think may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D 
 
 ---
