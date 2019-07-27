@@ -1,6 +1,6 @@
 ### Do you have a situation where you disagreed with the team ?
 
-The reasoning behind this question is to understand how do you can take rejections from others and how to react to them, Do you simply quit the job ? or stick along with the wrong decision(in respect to you) and get back to the work.
+The reasoning behind this question is to understand how do you react to people who disagree with you, Do you simply quit the job ? or stick along with the wrong decision(in respect to you) and get back to the work.
 
 A lot of times I witnessed experienced developers argue/debate/disagree over patterns again and again, and prove that how their proposed pattern is much cleaner and easier(in terms of understanding and implementing) than others.
 
@@ -40,9 +40,9 @@ I think, may be he was right, since he build a lot of functionalities of the com
 ### What are the few things you look for when you review another developer's code ?
 I look for code consistency, reusability and readability of the code. I focus more on readability and maintainability of the code on top of anything else, I strongly believe a well written code is nothing more than a well maintainable code. 
 
-Few other things I look for is CONSTANTS, let's say I am reviewing the code of the developer who written a function to enable `Place a order` button only if minimum amount of order is met, he can simply if( cartTotal > 50 ), 
+Few other things I look for is CONSTANTS, let's say I am reviewing the code of the developer who written a function to enable **Place a order** button only if minimum amount of order is met, he can simply if( cartTotal > 50 ), 
 
-For a new developer who is reading through this code, he has no clue about this magic number(50) appear from no where, I always insist in  creating a constants file and have constant something like MINIMUM_ORDER_TO_SHIP then use the constant 
+For a new developer who is reading through this code, he has no clue about this magic number(50) appear from no where, I always insist in  creating a constants file and have constant something like const MINIMUM_ORDER_TO_SHIP = 50 then use the constant.
 
 if( cartTotal > MINIMUM_ORDER_TO_SHIP) makes the easier to read and maintain, if the company decides to make change to minimum order, I don't have to dig through the files to find this if loop to alter the minimum order to ship, rather I would looks for constants file and make the changes accordingly.
 
@@ -54,13 +54,23 @@ Few other things I look for are
 ---
 
 ### What do you enjoy, to be a developer or to be a manager ?
-I enjoy being a developer more, not only I code for work but for fun. I enjoy learning new things and put my learnings into implementation. Being developer gives me a sense of accomplishment every time I build something new. 
+I enjoy being a developer more, not only I code for work but for fun. I enjoy learning new things and put my learnings into implementation. Being developer gives me a sense of accomplishment every time I build something new 👏🎯. 
 
 I am not sure If I would feel more accomplished making power point presentations 🙈!!! Just Kidding !! 😝😁
 
 ---
 
-### How do you keep up with the technology ?
+### How do you keep up with the technologies ?
+I think there is no other industry that is changing as rapidly as software development😭.
+
+I set aside at-least 30 minutes of my time to keep up to date with the technologies. 
+
+I avidly follow [hacker news](https://news.ycombinator.com/) for all my tech updates, each news link takes to different websites. 
+
+I look at [stackoverflow]( https://stackoverflow.com/?tab=week) top questions:, 
+I also love to popular medium stories from the developers from big tech companies,
+
+and yeah, I also catch up with [podcasts](https://softwareengineeringdaily.com) if I am sick of reading.
 
 ---
 
