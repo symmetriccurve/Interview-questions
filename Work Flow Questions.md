@@ -33,15 +33,30 @@ A follow up question would be,
 
 *My Answer:*
 
-I think may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D 
+I think, may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D 
 
 ---
 
-### What are few thing you look for when you code review ?
+### What are the few things you look for when you review another developer's code ?
+I look for code consistency, reusability and readability of the code. I focus more on readability and maintainability of the code on top of anything else, I strongly believe a well written code is nothing more than a well maintainable code. 
+
+Few other things I look for is CONSTANTS, let's say I am reviewing the code of the developer who written a function to enable `Place a order` button only if minimum amount of order is met, he can simply if( cartTotal > 50 ), 
+
+For a new developer who is reading through this code, he has no clue about this magic number(50) appear from no where, I always insist in  creating a constants file and have constant something like MINIMUM_ORDER_TO_SHIP then use the constant 
+
+if( cartTotal > MINIMUM_ORDER_TO_SHIP) makes the easier to read and maintain, if the company decides to make change to minimum order, I don't have to dig through the files to find this if loop to alter the minimum order to ship, rather I would looks for constants file and make the changes accordingly.
+
+Few other things I look for are
+1. Indentation
+2. Naming conventions 
+3. Code comments if the block of code has any edge case(Example: like if a coupon is applied, then no minium order is required)
 
 ---
 
 ### What do you enjoy, to be a developer or to be a manager ?
+I enjoy being a developer more, not only I code for work but for fun. I enjoy learning new things and put my learnings into implementation. Being developer gives me a sense of accomplishment every time I build something new. 
+
+I am not sure If I would feel more accomplished making power point presentations 🙈!!! Just Kidding !! 😝😁
 
 ---
 
