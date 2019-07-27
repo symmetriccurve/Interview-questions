@@ -47,9 +47,9 @@ For a new developer🐣 who is reading through this code, he has no clue about t
 if( cartTotal > MINIMUM_ORDER_TO_SHIP) 👍 makes the easier to read and maintain🎉, if the company decides to make changes to minimum order, I don't have to dig⚓️ through the files to find this if loop to alter the minimum order to ship, rather I would looks for constants file and make the changes accordingly.
 
 Few other things I look for are
-1. Indentation
-2. Naming conventions 
-3. Code comments if the block of code has any edge case(Example: like if a coupon is applied, then no minium order is required)
+* Indentation
+* Naming conventions 
+* Code comments if the block of code has any edge case(Example: like if a coupon is applied, then no minium order is required)
 
 ---
 
