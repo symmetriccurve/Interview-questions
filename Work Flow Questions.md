@@ -71,15 +71,35 @@ and yeah, I also catch up with 🎶 🎵[podcasts](https://softwareengineeringda
 
 ---
 
-### What is that you build that you are proud of ?
+### What is that you build that you are proud of ? 💪
+The answers are subjective 🙌
+
+My answer: 
+I build a [mine-sweeper](https://github.com/symmetriccurve/minesweeper-with-react)💣 from the scratch using reactjs ⚛.
+
+Few other things,
+1. I coded a python script that scans through the directory structure of react project and adds unit test templates to start with
+2. My [portfolio](https://www.belvikram.com)
 
 ---
 
-### If given a chance to re write your current application, what is the one thing you would add now ?
+### If given a chance to re write your current application, what are the few things that you would do differently now ?
+
+1. I would restructure the folder structure📂 in whole different way than that exists now. With the current structure📁, as we started to add more features ✨, the more nested the folder structure is😭. I would do more flatten structure🍞 this time😅
+2. I will decouple most of the components on the basis of view💄 and logic🧠 and have more smaller reusable components🧩.
 
 ---
 
 ### what do you dislike in your current project, what can you do to make it better ?
+My current project is re-write of a legacy application🌚 which was build like 7 years back using jQuery👴🏼. When we started to rewrite the components and stitch🧵 the logic, we were not sure about the all the use cases possible . The unit tests💼 were out of sync and does more implementation testing than testing the functionality, and also there is bare minimum documentation📄 available on the requirements. 
+
+It takes a lot of time on running back and worth with the QA team as we progress to check if everything matches the parity.
+
+`I believe the quote by Edward V. Berard — 'Walking on water and developing software from a specification are easy if both are frozen.`
+
+This constant check with QA team was setting back the team in terms of development🧪, as we think we are getting closer to close the story, there comes another corner use case we missed.
+
+Learning from this, we are trying our best to create documentation📄 around the application as we build and focus adding more unit tests💼 testing the functionality🧪.
 
 ---
 
