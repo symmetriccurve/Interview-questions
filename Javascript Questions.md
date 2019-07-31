@@ -104,11 +104,25 @@ https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-j
 
 ---
 
-### Your Favorite ES6 functions ?
-http://es6-features.org/#Constants
-http://es6-features.org/#StringInterpolation
-http://es6-features.org/#ExpressionBodies
-https://github.com/lukehoban/es6features
+### Your Favorite ES6 features ?
+### Did you use any ES6 features in your project ?
+### Are you aware of any ES6 features ?
+
+I have extensively used many ES6 features in my project.
+Few of them are destructuring, block-scoped variables, Arrow functions(also called fat arrow functions), spread operators, StringInterpolation, property Shorthand, ES6 Stateless components for creating react components and default values for function parameters
+
+I would use `destructuring` to parse through a object and assign respective property values as stand alone variable, this is very helpful and cut down few lines of code and very intuitive to read, I combine this with default values assignment just in case if the property does not exist, this one liner creates a property as well as assign a `default value` , I love this.
+
+I use arrow functions to bind the context of the function to the object where the function is executed, I use them a lot to create functions without use of keywords `function` and `return`, It's kinda of confusing to me in the beginning but I slowly learnt the art of using arrow functions
+
+StringInterpolation is another thing I use a lot to concat the strings, after using this feature, I thought why did it take so long for ECMA team to come up with this feature.
+
+
+Read more here: 
+
+1. http://es6-features.org/#Constants
+2. http://es6-features.org/#StringInterpolation
+3. https://github.com/lukehoban/es6features
 
 ---
 

@@ -95,7 +95,7 @@ My current project is re-write of a legacy application🌚 which was build like 
 
 It takes a lot of time on running back and worth with the QA team as we progress to check if everything matches the parity.
 
-`I believe the quote by Edward V. Berard — 'Walking on water and developing software from a specification are easy if both are frozen.`
+I believe the quote by Edward V. Berard — `Walking on water and developing software from a specification are easy if both are frozen.`
 
 This constant check with QA team was setting back the team in terms of development🧪, as we think we are getting closer to close the story, there comes another corner use case we missed.
 
