@@ -2,7 +2,33 @@
 
 ---
 
-### Can you explain different position properties in CSS
+### Can you explain different position properties in CSS ?
+There are five different position values:
+
+(How do I remember: 
+    Mnemonic: Frass
+    Meaning: `fine powdery refuse or fragile perforated wood produced by the activity of boring insects` )
+
+- Static
+  - Element is positioned with normal flow of page.
+  - left/right/top/bottom/z-index set then there will be no effect on that element.
+
+- Relative 
+  - Element is positioned with normal flow of page.
+  - left/right/top/bottom/z-index will move the element accordingly.
+
+- Absolute
+  - Elements dis respect normal flow of page
+  - Element is positioned absolutely to its first positioned parent
+
+- Fixed
+  - Behaves as a Absolute positioned element
+  - Positioned with respect to browser window
+  - Example: Chat window's
+
+- Sticky
+  - Element is positioned based on the user's scroll position
+  - Example: Excel sheet fixed row headers.
 
 ---
 
@@ -151,6 +177,8 @@ https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e
 ---
 
 ### Why do you use box-sizing property ?
+The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+
 
 ---
 
@@ -180,4 +208,19 @@ https://www.upwork.com/hiring/development/css-vs-css3/
 
 ---
 
-### Difference between CSS and CSS3 ?
+### Advantages of using a a pre-processor like Sass ?
+
+---
+
+### What is CSS specificity?
+CSS specificity is one of the issues if you do not see your styles applied to the element.
+
+CSS Specificity is the set of the rules applied to CSS selectors in order to determine which style is applied to an element. The more specific a CSS style is, the higher point value it accrues, and the likelier it is to be present on the element's style.
+
+The order of specificity is(from highest to lowest)
+Style attribute => ID => Class => Elements
+
+Mnemonic to remember `Super ICE`
+
+More here: https://dev.to/emmawedekind/css-specificity-1kca
+
