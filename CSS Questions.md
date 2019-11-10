@@ -2,11 +2,43 @@
 
 ---
 
-### Can you explain different Position properties in CSS
+### Can you explain different position properties in CSS
 
 ---
 
 ### What is box modal ?
+
+---
+
+### What is margin collapse ?
+https://css-tricks.com/what-you-should-know-about-collapsing-margins/
+
+When two block level elements lets says blockA and blockB are stacked one above the other and 
+blockA have margin-bottom of 50px;
+blockB have margin-top of 100px;
+
+the margins of blockA and blockB elements are collapsed and have only have 100px space between them(margin with higher number)
+
+Collapse margins only happens
+- on top and bottom margins(Vertical margins)
+- with block elements
+- if the elements are in direct contact with out any padding and border in between. 
+
+https://jsfiddle.net/bevikram/fr8aogqb/
+
+---
+
+### What to disable margin collapse ?
+Margin collapse only happens with block level elements, applying `display: inline-block` disables the margin collapse.
+
+---
+
+### What does margin collapse exist?
+### is there a use case for margin collapse ?
+Margin collapse is useful when dealing with typographic elements like h tags, p tags. 
+
+The collapse helps to better formate the elements 
+https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e37ca0
 
 ---
 
@@ -42,7 +74,7 @@
 
 --- 
 
-### Explain media queries
+### Explain media queries ?
 
 ---
 
@@ -123,4 +155,29 @@
 ---
 
 ### Do you know about css clearfix ?
+CSS clearfix is a hack to make the element larger to fit all of it's floating children
 
+Let says A parent element div has 10px height and have few children
+first child div has 20px height and
+second child div has 40px height.
+
+the child div overflow out of parent div, to fix this a clearfix is applied to parent div to expand and fix all of it's children.
+
+https://stackoverflow.com/questions/8554043/what-is-a-clearfix
+
+---
+
+### Difference between CSS and CSS3 ?
+| CSS  |  CSS3 | 
+|---|---|
+| No rounder corners  | Achieved using border-radius  |
+| No Gradients |  Achieved using background: linear-gradient(white,black) |
+| No Animated effects, achieved using JQuery or javascript  | inbuild animation effects like shadow and animation interval etc  |
+| Only support for web safe fonts| Access to more designer fonts  |
+| Does not have modules - hence slow | Has modules - is faster |
+
+https://www.upwork.com/hiring/development/css-vs-css3/
+
+---
+
+### Difference between CSS and CSS3 ?

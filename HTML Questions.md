@@ -51,7 +51,7 @@
     appendChildren(function(div) {});
 ```
 
-appendChildren is a recursive function and calls recusurvingly until allDivs.length is less than i which never happens as function keep adding the div recursively. 
+appendChildren is a recursive function and calls recursively until allDivs.length is less than i which never happens as function keep adding the div recursively. 
 
 The fix is to isolate the allDivs variable and hold the initial values without being updated someway, or instead of getting the updated html divs, we can get the querySelectorAll instead of getElementsByTagName so we only get the divs from the first iteration avoiding the loop
 

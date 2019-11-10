@@ -23,6 +23,14 @@ Async function getData(){
 
 ---
 
+### What is the difference between map, reduce, filter and forEach in javascript ?
+
+---
+
+### What is call and apply in javascript ?
+
+---
+
 ### What is context in javascript ?
 
 ---
@@ -31,11 +39,11 @@ Async function getData(){
 
 ---
 
-### What are some desing pattern you are familiar with ?
+### What are some design pattern you are familiar with ?
 
 ---
 
-### What is the of object ?
+### What is this in a javascript ?
 
 ---
 
@@ -88,6 +96,10 @@ The beauty of closure is that the closure can remember the last call value of th
 ---
 
 ### What is event loop ?
+
+---
+
+### What is hoisting in javascript ?
 
 ---
 

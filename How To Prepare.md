@@ -1,4 +1,3 @@
-
 Memorize your Resume
 Dress Well,
 Better lighting conditions,

@@ -6,6 +6,8 @@
 ---
 ### What do you mean when you say react is a view library ?
 ---
+### What is JSX ?
+---
 
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
 Every component in react undergoes three phases, 
@@ -497,7 +499,7 @@ Enzyme and Jest
 ---
 
 ### Can you write a sample test case ?
-Let's say you want to test if a component is rendering a  2 input fields on a login page 
+Let's say you want to test if a component is rendering a 2 input fields on a login page 
 
 ```javascript
 
