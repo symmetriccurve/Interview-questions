@@ -169,7 +169,7 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 
 ### Difference between CSS and CSS3 ?
 | CSS  |  CSS3 | 
-|---|---|
+|--|--|
 | No rounder corners  | Achieved using border-radius  |
 | No Gradients |  Achieved using background: linear-gradient(white,black) |
 | No Animated effects, achieved using JQuery or javascript  | inbuild animation effects like shadow and animation interval etc  |
