@@ -3,6 +3,19 @@
 
 ---
 ### Why React and not any other library ?
+Every web framework or library aims to mutate the DOM in most efficient way possible because DOM mutations are expensive.
+
+React is no different, under the hood it uses a mechanism called VDOM which optimizes the DOM mutations way faster than other libraries.
+
+( Interviewee would expect this answer but  he can further ask, if directly mutating the DOM is slower how come mutating VDOM and then VDOM intern mutate Real DOM is Faster ? At this point, we understand the interviewee has insight into React Internals so let’s get more verbose about why use React)
+
+A web page is nothing but a HTML template injected with data. But as the applications are growing larger so does the data to show to user. Maintaining the Data manipulation and HTML templates reacting to this data manipulation is going out of control, and HTML shows inconsistent data on the UI.
+
+Angular solves this problem by two way data binding, when a model updates - view is updated and vice versa.
+React solves this problem in a declarative way with a unidirectional approach,  we only change the model aka state and React ‘reacts’ to this change and finds the optimized way to mutate the view(which uses the VDOM). 
+
+The declarative ability of the React helps to focus on the data than on the View, which helps to build large single page applications with out to worry much about the how views would react to these changes. 
+
 ---
 ### What do you mean when you say react is a view library ?
 ---
