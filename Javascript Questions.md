@@ -40,7 +40,44 @@ Async function getData(){
 ---
 
 ### What are some design pattern you are familiar with ?
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/#designpatternsjavascript
 
+1. constructor pattern
+2. Modular pattern
+
+3. constructor pattern
+Constructor pattern is used if a object method should be shared across multiple objects,
+Let's say a Car is a constructor function which create a Car object every time it is called
+
+```javascript
+function Car(name, model){ // Construction functions starts with capital letter(Just to differentiate)
+  this.name = name;
+  this.model = modal;
+  this.toString = function(){
+    console.log("Name:",this.name,"Model",this.model)
+  }
+}
+
+To create a new instance of the car object, a `new` keyword is used.
+var civic = new Car( "Honda Civic", 2009 );
+var mondeo = new Car( "Ford Mondeo", 2010 );
+
+Every time a new car object is created, the function toString is also created which takes memory.
+
+instead a prototype function can be created to share across all the instances of the car objects
+
+function Car(name, model){ // Construction functions starts with capital letter(Just to differentiate)
+  this.name = name;
+  this.model = modal;
+}
+
+Car.prototype.toString = function(){
+    console.log("Name:",this.name,"Model",this.model)
+  }
+```
+Above, a single instance of toString() will now be shared between all of the Car objects.
+
+2. 
 ---
 
 ### What is this in a javascript ?
@@ -83,7 +120,11 @@ The beauty of closure is that the closure can remember the last call value of th
 
 ---
 
-### How do you create classes in Javascript  ?
+### How do you create classes in Javascript ?
+
+---
+
+### what are different ways you can create objects in javascript ?
 
 ---
 
@@ -140,3 +181,8 @@ Read more here:
 
 ### Difference between let and var ?
 https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable
+
+---
+
+### what is polymorphism and how it is achieved in javascript ?
+Polymorphism in Object-Oriented Programming is the ability to create a variable, a function, or an object that has more than one form
