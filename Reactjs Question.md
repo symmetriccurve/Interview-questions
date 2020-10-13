@@ -540,6 +540,13 @@ describe('<MyComponent />', () => {
 As browsers do not support JSX natively, a transpiler is used to convert JSX to javascript. The Transpiler is the Babel, it is configured using .babelrc file inside the root level of the application.
 
 ---
+
+### Tell me about a technology you recently learned ? why did you choose to learn it and were you able to leverage it on a project.
+
+I recently learned React-testing-library to unit test react components, I very much liked this library for the way it does the unit testing.. All the previous testing libraries I have used to test the react component were testing the implementation details like where is the div or span in the node tree and parsing the tree for the content and asset on the test. This methodology of testing breaks the unit tests if the HTML node structure changes or if the components are further breken down.. But the new testing library assets on the text and visibility of the elements rather than where they are placed in the node tree..  Testing the component in a way the user interacts with it.. The user does not have a clue on the implementation details and this is how unit testing should be done as well.. The react-testing-library tests the functionality over the implementation details and provides very clean APIs like fireEvent and render which mimics user interactions on the browser.. I pitched this to my team when we were looking for adding testing library to our project and we successfully was able integrate the unit testing library and we were able to achieve 95% of code coverage. I am really happy with the decision as it gave lot of more confidence to the developers to make changes without breaking the existing functionality, we further integrated with the CI/CD tool to run the test cases on the pipeline to  run over pull requests to save code review time to the developers.
+
+---
+
 ### Why do you prefer React-Native over native development ?
 
 ---
