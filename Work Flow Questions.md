@@ -116,6 +116,12 @@ Learning from this, we are trying our best to create documentation📄 around th
 ### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
 
 ---
+
+### Tell Us about a Challenge/Problem you recently faced  on a project ? How did you approach solving it and what was the outcome ?
+
+While I was working on my current project, as part of the video player integration I had to play a video file downloaded from a remote server, as the this was part of a migration project from jQuery to react, I took the part of the feature which involved integrating a web video player, to be honest I thought this was not complex initially as I did my research on the available libraries to play the video.. When I started integrating the video player with the sample video of same format I was able to play the video without a hitch but when I am trying to download the video from the URL the video player fails to load the video, my initial thoughts were the player is  not capable of playing a stream as it is downloading so I used a lazy loading view to completely download the video and then play it, still the player was not able to pick the steam and throws incompatible video format even though i am 100% sure the video format I am using is supported by the player.. But I had no clue what I was doing wrong and I could not find a related issue on the github repo where the player is hosted.. I switched to different players just to understand if the issue is with the player with the video being downloaded, I was unable to play the video in any available video players(not even on videojs which can play around 90% of the video formats). I ran out of options and I chose to use the existing JQuery video player though the library is deprecated and did not have an option to play the video at 1X, 2X, 5X playback speed which is the new requirement. Interestingly I was not able to play the video in the JQuery player, I dug through the huge code base and finally found that under the hood, the video codec has been altered after the video is downloaded to support it to play on the web player… all i had to do is to add a few params to the h264 video codec to merge audio and video before it is handed to the video player.. Finally I was able to run the video on the Videojs player with playback speed. I really leart about video formats and codec with this integration.
+
+---
 ### What is most complex piece of development you did so far ?
 
 ---
