@@ -329,6 +329,20 @@ Reducers are nothing but pure javascript functions that takes one state and opti
 
 ---
 
+### What is Context API ?
+
+The context API is basically a React’s own home grown way to replace complex state management libaries like flux and redux. The core idea of context api to avoid props drilling across the components and provide a global state.   Usually context API can be used for values that reflect across the app like themes, authentication or preferred language. 
+
+There are 3 different pieces to hook up context to a React App. The context itself which has a default value and the callback to change the value, the provider which passes the values down the component tree and the consumer that consumes the passed in values. The cool thing about the consumer is that it only listens to the nearest provider higher in the component tree, this allows to nest multiple providers. 
+
+---
+
+### What is Prettier ?
+
+Prettier is a code formatter that helps to format the code based on the .prettierrc(say it as dot prettier rc file) config file.  it’s basically help to auto format the code looking for common code guidelines like missing semicolons or indentations or usage of particular code styles based on config file. Usually developers in an organization come together and decide on certain code guide lines which can be integrated into the workspace so new developers can easily able to contribute aligning towards already setup guide lines.   prettier can also integrated with a build pipeline to auto format the pull requests which can save developers on code reviews. 
+
+---
+
 ### What are container component and presentational components in React and redux ?
 Container Component or smart components are those deal with the data, in case of Redux those are the one that are connected to Store. 
 
