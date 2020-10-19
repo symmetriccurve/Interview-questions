@@ -138,6 +138,16 @@ componentWillMount is called before the render is called and ComponentDidMount i
 
 ---
 
+## What are hooks in react ?
+
+From React 16.8, react team introduced a new concept hooks which helps to hook features to functional components, earlier to hooks it wasn’t possible to add a state into a functional components and the only way is to translate the stateless or functional component to class component to introduce state, with introduction of hooks a useState hook can be use to add state in to functional components. 
+
+without a state it wasn’t possible make async actions in functional components, so another hook Called useEffect is introduced to make async calls, with combination of useState and useEffect a functional component can be full blown react component with data fetching capabilities.
+
+There are other additional hooks like useContext, useRef, useMemo, useReducer for respective use cases.
+
+---
+
 ### What are the life cycle methods that are called on first render ?
 
 Constructor 
