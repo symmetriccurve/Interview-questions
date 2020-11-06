@@ -1,4 +1,4 @@
-### Can you implement promise.race function ? [paypal]
+### Can you implement promise.race function ? (paypal)
 
 This question is little tricky and needs thorough understanding of how promises work in javascript.
 The idea of promise.race is as simple as it sounds, it takes array of promises and puts race to all the promises and which ever winds the race returns the value.
@@ -49,6 +49,8 @@ const rules = [
 
 resolveRules(rules).then((res) => console.log(res));
 ```
+
+---
 
 ### What is Async and Await ?
 
