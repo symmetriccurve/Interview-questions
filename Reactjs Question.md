@@ -2,6 +2,19 @@
 ##### This page is constantly updated with new questions and answers( with better examples ). Please check back if you are unable to find an answer to a existing question or you can submit a new question [here](https://github.com/symmetriccurve/Interview-questions/issues/new/choose)
 
 ---
+### Tell me about your recent work ?
+---
+### What are the advantages of graphQL ?
+---
+### How did you achieve responsiveness on Reactjs?
+---
+### What is the complex bug you fixed on your project ?
+---
+### Can you please write a simple graphQl query using hooks ?
+---
+### What is the equivalent of componentDidMount in functional Components ?
+---
+
 ### Why React and not any other library ?
 Every web framework or library aims to mutate the DOM in most efficient way possible because DOM mutations are expensive.
 
