@@ -1,7 +1,7 @@
 ### Can you implement promise.race function ? (paypal)
 
 This question is little tricky and needs thorough understanding of how promises work in javascript.
-The idea of promise.race is as simple as it sounds, it takes array of promises and puts race to all the promises and which ever winds the race returns the value.
+The idea of promise.race is as simple as it sounds, it takes array of promises and puts race to all the promises and which ever wins the race will give the promise response first.
 
 A simple example can be:
 imagine if you are trying to make a google search, now google being such a huge company will have may data centers around your location, one might be right next door or may be down the city. Google tries it's best to get the results as quick as possible..we might think getting the results from next door server is much faster then down the city server but what if the data connection to the next door is too slow.. so the browser smartly makes the request to both servers and which ever get you the results first it will consider and drop the request of the next server middle way. Similarly, promise.race([nextDoor, downTheCity]) takes two API calls(calling API is asynchronous so does the promises) and only resolve value from fastest response.
@@ -12,16 +12,18 @@ promise.race([nextDoor, downTheCity]).then(function (resultsFromFasterServer) {
 });
 ```
 
-To mimic the same behavior we can do the following
+Instead of using the out of box promise.race, interviewers is asking to implement the same without using promise.race function. we can do something like below which does the same job.
 
 ```javascript
-function resolveRules(rules) {
-  return new Promise((resolve, reject) => {
-    rules.forEach((rule) => rule.then((ruleResponse) => resolve(ruleResponse)));
+function resolvePromises(promises) {
+  return new Promise((parentResolve, reject) => {
+    promises.forEach((promise) =>
+      rule.then((promiseResponse) => parentResolve(promiseResponse))
+    );
   });
 }
 
-const rules = [
+const promises = [
   new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("first");
@@ -50,9 +52,23 @@ const rules = [
 resolveRules(rules).then((res) => console.log(res));
 ```
 
+in the above example, promises is a array of promises, each promise takes different time to resolve, think of them as different data centers responding to the request.
+
+Now we take in the promises array into resolvePromises function, and here is where the magic happens. Please follow closely.
+
+First, we take all the promises and loop over(using forEach) the promises to get the response, we wrap all the promises inside an another high level parent promise, and let the child promises resolve one after other, which ever child is resolved first will notify the parent promise saying, `hey I got the data` by calling the parentResolve first.
+
+To give you a more mental modal, think of swimming lanes and each swimmer is a promise and a coach sitting watching over the race, the coach gives a whistle(parentResolve callback) to each swimmer(each promise) and ask to blow the whistle who ever crosses the finish line, the coach(parent promise) just listens to the whistle and stops the race immediately(early terminating the race by saving energy of other swimmers aka saving resources on the client machine to not wait for other request to complete)
+
+This might take a little while to sync in if you are new to promises
+
 ---
 
 ### What is Async and Await ?
+
+javascript is single threaded programming language and it utmost important to not block the single thread available so we make use of promises in combinations of callback functions to execute asynchronous flow.
+
+promise.
 
 **Await** keyword is valid only inside a Async function. Async is a function and await always followed by a promise.
 
