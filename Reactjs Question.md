@@ -739,3 +739,61 @@ I recently learned React-testing-library to unit test react components, I very m
 ---
 
 ### How do you install/link dependencies in react-native application ?
+
+---
+
+### What do you look for when you implement FlatList ?
+
+---
+
+### What do you look for when you implement FlatList ?
+
+---
+
+### Do you think animations on React-native are better or on Native is better ?
+
+---
+
+### Are you familiar with interaction manager ? will you use this to make animations better ?
+
+---
+
+### Are you familiar with animated API ?
+
+---
+
+### What is the difference between flex box on web vs flex box on mobile ?
+
+---
+
+### Which component life cycle will you use if you have to make API calls and why do you choose that?
+
+---
+
+### Can I make API calls in componentWillMount instead of componentDidMount ?
+
+---
+
+### Why should I use functional components instead of class based components ?
+
+---
+
+### Let say I have component that renders 5 times because of props change, how many times does the useEffect will be called ?
+
+---
+
+### What happens if I do not specify any arguments to the useEffect how many times it is called ?
+
+---
+
+### what happens if I pass empty array as an argument ?
+
+---
+
+### If I have to do some house keeping on the component, where should I do on useEffect?
+
+---
+
+### How can we differentiate between prod and development environments ?
+
+---
