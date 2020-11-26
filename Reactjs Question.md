@@ -684,10 +684,6 @@ I recently learned React-testing-library to unit test react components, I very m
 
 ---
 
-### What do you look for when you implement FlatList ?
-
----
-
 ### Do you think animations on React-native are better or on Native is better ?
 
 ---
