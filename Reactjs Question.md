@@ -797,3 +797,100 @@ I recently learned React-testing-library to unit test react components, I very m
 ### How can we differentiate between prod and development environments ?
 
 ---
+
+## I have navigation screens say A, B, C, D screens. On iOS user should see only to A and C screens, while on Android user should only B and D screens.
+
+## This is a two part question:
+
+## 1. How to you handle the navigation based on the platform ?
+
+## 2. When generating the APK how can get rid of the A and D code and similarly while building iOS how can avoid including B and D code, I do not like to have any residue because it will increase app size ?
+
+---
+
+## Do you deploy APK and IPA files to the testing environment like test-flight, hockey using Pipeline ?
+
+---
+
+## As you know about recent CCPA(California consumer Privacy act) act effective from 2020, how do you make sure you are handling the data correct ?
+
+---
+
+## As we need with authentication, we need secure the tokens somewhere in the App, how do you make sure these token are secure ?
+
+The easiest way is to use the Async storage which stores data in a key value pair. The problem with Async storage is that its nor encrypted so it wont suit your requirement.
+The other option is to use the react-native-keychain library which stores the passwords or keys in the securely in the keychain of IOS and keystore in Android. The security part will be managed by the operating system. So this is an approach that can be recommended for your requirement.
+
+---
+
+## When you make a API call on the App, how do you make sure that you are not blocking the UI thread ?
+
+---
+
+## What is the most difficult component you build that you thought was easy initially both on react and React- native ?
+
+---
+
+## What are the different authorization methods like oAuth you are familiar with ?
+
+---
+
+## How do you set and getProps, what methodology you use ?
+
+---
+
+## What are the few different ways where you can show invalid input inside a text field?
+
+---
+
+## How do you errors and handle exceptions app crashes in your app ?￼￼￼
+
+---
+
+## Can you please walk me through the process of debugging an app when it is crashing in the prod.
+
+---
+
+## What are the top three things you would consider if you are starting an app from the scratch? ￼
+
+---
+
+## Can you please walk me through a process of where you have two different code bases for android and iOS and you want to create a single repository of React Native how would you start approaching while communicating to both the teams and do not stopping their contributions to their respective repositories ?
+
+---
+
+## I have a standard native android and iOS app and I would like to introduce React Native into few screens ￼how can I get started￼?
+
+---
+
+## Can you elaborate a little bit on how would you approach a state management library ?
+
+---
+
+## What methodologies do you use to communicate about the new available components in your library that can be used to build the features across other apps ?
+
+---
+
+## If there is a new requirement which was not told previously that you want to convert React Native app into a browser app how would you do this ??
+
+---
+
+## What do you prefer a objective C, Swift, kotlin, React Native or flutter. ?
+
+---
+
+## Can you talk a little bit about the bundling process on reactjs and as well as React Native￼ ??
+
+---
+
+## What mechanisms do you use to log app crashes to store them to remote server￼ ?
+
+---
+
+## Can you walk me through the process where you would like to validate text input against by a remote API for example if a user ID already taken or not.
+
+---
+
+## Did you bring in any design ideas for a better user experience tell me about a scenario where you brought in a value addition to the design ? ￼
+
+---
