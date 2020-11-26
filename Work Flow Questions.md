@@ -1,4 +1,4 @@
-### Do you have a situation where you disagreed with the team ?
+#### Do you have a situation where you disagreed with the team ?
 
 The reasoning behind this question is to understand how do you react to people who disagree with you, Do you simply quit the job ? or stick along with the wrong decision(in respect to you) and get back to the work.
 
@@ -36,7 +36,7 @@ I think, may be he was right, since he build a lot of functionalities of the com
 
 ---
 
-### What are the few things you look for when you review another developer's code ?
+#### What are the few things you look for when you review another developer's code ?
 
 I look for code consistency✅, reusability📦 and readability📖 of the code. I focus more on readability and maintainability📁 of the code on top of anything else, I strongly believe a well written code is nothing more than a well maintainable code.
 
@@ -54,7 +54,7 @@ Few other things I look for are
 
 ---
 
-### What do you enjoy, to be a developer or to be a manager ?
+#### What do you enjoy, to be a developer or to be a manager ?
 
 I enjoy being a developer more, not only I code for work but for fun. I enjoy learning new things and put my learnings into implementation. Being developer gives me a sense of accomplishment every time I build something new 👏🎯.
 
@@ -62,7 +62,7 @@ I am not sure If I would feel more accomplished making power point presentations
 
 ---
 
-### How do you keep up with the technologies ?
+#### How do you keep up with the technologies ?
 
 I think there is no other industry that is changing as rapidly as software development😭. I set aside at-least 30 minutes 🕔 🕠 of my time to keep up to date with the technologies.
 
@@ -74,7 +74,7 @@ and yeah, I also catch up with 🎶 🎵[podcasts](https://softwareengineeringda
 
 ---
 
-### What is that you build that you are proud of ? 💪
+#### What is that you build that you are proud of ? 💪
 
 The answers are subjective 🙌
 
@@ -88,14 +88,14 @@ Few other things,
 
 ---
 
-### If given a chance to re write your current application, what are the few things that you would do differently now ?
+#### If given a chance to re write your current application, what are the few things that you would do differently now ?
 
 1. I would restructure the folder structure📂 in whole different way than that exists now. With the current structure📁, as we started to add more features ✨, the more nested the folder structure is😭. I would do more flatten structure🍞 this time😅
 2. I will decouple most of the components on the basis of view💄 and logic🧠 and have more smaller reusable components🧩.
 
 ---
 
-### what do you dislike in your current project, what can you do to make it better ?
+#### what do you dislike in your current project, what can you do to make it better ?
 
 My current project is re-write of a legacy application🌚 which was build like 7 years back using jQuery👴🏼. When we started to rewrite the components and stitch🧵 the logic, we were not sure about the all the use cases possible . The unit tests💼 were out of sync and does more implementation testing than testing the functionality, and also there is bare minimum documentation📄 available on the requirements.
 
@@ -109,122 +109,122 @@ Learning from this, we are trying our best to create documentation📄 around th
 
 ---
 
-### is there any time you under estimated a story ? and how did you handle the situation ?
+#### is there any time you under estimated a story ? and how did you handle the situation ?
 
 ---
 
-### What is your idle work environment ?
+#### What is your idle work environment ?
 
 ---
 
-### How do you envision your next role should be ?
+#### How do you envision your next role should be ?
 
 ---
 
-### What are you looking for in your next position ?
+#### What are you looking for in your next position ?
 
 ---
 
-### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
+#### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
 
 ---
 
-### Do you have experience deploying applications in Azure? Which role did you do this in?
+#### Do you have experience deploying applications in Azure? Which role did you do this in?
 
 I have experience deploying the applications in Azure with the help of few backend developers. I am not primarily the contributor role.
 
 ---
 
-### What cloud technologies have you used or are using now?I am familiar with Google Cloud, AWS, Firebase
+#### What cloud technologies have you used or are using now?I am familiar with Google Cloud, AWS, Firebase
 
 (Google owned). Currently we are using Microsoft Azure.
 
 ---
 
-### Tell Us about a Challenge/Problem you recently faced on a project ? How did you approach solving it and what was the outcome ?
+#### Tell Us about a Challenge/Problem you recently faced on a project ? How did you approach solving it and what was the outcome ?
 
 While I was working on my current project, as part of the video player integration I had to play a video file downloaded from a remote server, as the this was part of a migration project from jQuery to react, I took the part of the feature which involved integrating a web video player, to be honest I thought this was not complex initially as I did my research on the available libraries to play the video.. When I started integrating the video player with the sample video of same format I was able to play the video without a hitch but when I am trying to download the video from the URL the video player fails to load the video, my initial thoughts were the player is  not capable of playing a stream as it is downloading so I used a lazy loading view to completely download the video and then play it, still the player was not able to pick the steam and throws incompatible video format even though i am 100% sure the video format I am using is supported by the player.. But I had no clue what I was doing wrong and I could not find a related issue on the github repo where the player is hosted.. I switched to different players just to understand if the issue is with the player with the video being downloaded, I was unable to play the video in any available video players(not even on videojs which can play around 90% of the video formats). I ran out of options and I chose to use the existing JQuery video player though the library is deprecated and did not have an option to play the video at 1X, 2X, 5X playback speed which is the new requirement. Interestingly I was not able to play the video in the JQuery player, I dug through the huge code base and finally found that under the hood, the video codec has been altered after the video is downloaded to support it to play on the web player… all i had to do is to add a few params to the h264 video codec to merge audio and video before it is handed to the video player.. Finally I was able to run the video on the Videojs player with playback speed. I really leart about video formats and codec with this integration.
 
 ---
 
-### What is most complex piece of development you did so far ?
+#### What is most complex piece of development you did so far ?
 
 ---
 
-### Do you like to work isolated or with a Team ? why ?
+#### Do you like to work isolated or with a Team ? why ?
 
 ---
 
-### Is there a situation you asked help from the team ? How do you ask help from the team ?
+#### Is there a situation you asked help from the team ? How do you ask help from the team ?
 
 ---
 
-### What is something you learned in your current project that can help you to do better in your next project ?
+#### What is something you learned in your current project that can help you to do better in your next project ?
 
 ---
 
-## Why React is better than other libraries ?
+### Why React is better than other libraries ?
 
 ---
 
-## What unit testing libraries you have used ?
+### What unit testing libraries you have used ?
 
 ---
 
-## What is the greatest achievement in your project that received appreciation ?
+### What is the greatest achievement in your project that received appreciation ?
 
 ---
 
-## Tell me about your recent project ?
+### Tell me about your recent project ?
 
 ---
 
-## Do you have experience with Java ?
+### Do you have experience with Java ?
 
 ---
 
-## What is the difference between git rebase and git merge ?
+### What is the difference between git rebase and git merge ?
 
 ---
 
-## Is there a situation where you went above and beyond to get work done ?
+### Is there a situation where you went above and beyond to get work done ?
 
 ---
 
-## Do you merge your code directly to the master ?
+### Do you merge your code directly to the master ?
 
 ---
 
-## What is the release cycle you follow ?
+### What is the release cycle you follow ?
 
 ---
 
-## What is remote debugging on Java on eclipse ?
+### What is remote debugging on Java on eclipse ?
 
 ---
 
-## if you do hot replace on java instance, how long does the code lasted ?
+### if you do hot replace on java instance, how long does the code lasted ?
 
 ---
 
-## if you hot replace, will it override the classes immediately ?
+### if you hot replace, will it override the classes immediately ?
 
 ---
 
-## What happens if I restart the instance on remote debugging ?.
+### What happens if I restart the instance on remote debugging ?.
 
 ---
 
-## What happens when you are struck, what do you do ?
+### What happens when you are struck, what do you do ?
 
 ---
 
-## What did you do if you worked on a feature and some other developer sent a PR to your code base as an improvement ?
+### What did you do if you worked on a feature and some other developer sent a PR to your code base as an improvement ?
 
 ---
 
-## Can you describe me a scenario where you were working on a bug and found that bug is caused by some other team completely unrelated to your team, how will you tackle this ?
+### Can you describe me a scenario where you were working on a bug and found that bug is caused by some other team completely unrelated to your team, how will you tackle this ?
 
 ---
 
-## How many team members ? how large of a team can you think you can do better ?
+### How many team members ? how large of a team can you think you can do better ?
