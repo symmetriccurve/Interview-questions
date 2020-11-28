@@ -34,6 +34,8 @@ _My Answer:_
 
 I think, may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D
 
+##### Work Flow
+
 ---
 
 #### What are the few things you look for when you review another developer's code ?
@@ -52,6 +54,8 @@ Few other things I look for are
 - Naming conventions
 - Code comments if the block of code has any edge case(Example: like if a coupon is applied, then no minium order is required)
 
+##### Work Flow
+
 ---
 
 #### What do you enjoy, to be a developer or to be a manager ?
@@ -59,6 +63,8 @@ Few other things I look for are
 I enjoy being a developer more, not only I code for work but for fun. I enjoy learning new things and put my learnings into implementation. Being developer gives me a sense of accomplishment every time I build something new 👏🎯.
 
 I am not sure If I would feel more accomplished making power point presentations 🙈!!! Just Kidding !! 😝😁
+
+##### Work Flow
 
 ---
 
@@ -71,6 +77,8 @@ I avidly follow 🐶[hacker news](https://news.ycombinator.com/) for all my tech
 I look at [stackoverflow](https://stackoverflow.com/?tab=week) top questions🔥, I also love to read popular medium stories from the developers from top tech companies.
 
 and yeah, I also catch up with 🎶 🎵[podcasts](https://softwareengineeringdaily.com) if I am sick of reading 😅.
+
+##### Work Flow
 
 ---
 
@@ -86,12 +94,16 @@ Few other things,
 1. I coded a python script that scans through the directory structure of react project and adds unit test templates to start with
 2. My [portfolio](https://www.belvikram.com)
 
+##### Work Flow
+
 ---
 
 #### If given a chance to re write your current application, what are the few things that you would do differently now ?
 
 1. I would restructure the folder structure📂 in whole different way than that exists now. With the current structure📁, as we started to add more features ✨, the more nested the folder structure is😭. I would do more flatten structure🍞 this time😅
 2. I will decouple most of the components on the basis of view💄 and logic🧠 and have more smaller reusable components🧩.
+
+##### Work Flow
 
 ---
 
@@ -107,25 +119,37 @@ This constant check with QA team was setting back the team in terms of developme
 
 Learning from this, we are trying our best to create documentation📄 around the application as we build and focus adding more unit tests💼 testing the functionality🧪.
 
+##### Work Flow
+
 ---
 
 #### is there any time you under estimated a story ? and how did you handle the situation ?
+
+##### Work Flow
 
 ---
 
 #### What is your idle work environment ?
 
+##### Work Flow
+
 ---
 
 #### How do you envision your next role should be ?
+
+##### Work Flow
 
 ---
 
 #### What are you looking for in your next position ?
 
+##### Work Flow
+
 ---
 
 #### If you have limited time to deliver 11 features for a application and you see you can only do 5 features, How will you able to handle this deadline situation ?
+
+##### Work Flow
 
 ---
 
@@ -133,11 +157,15 @@ Learning from this, we are trying our best to create documentation📄 around th
 
 I have experience deploying the applications in Azure with the help of few backend developers. I am not primarily the contributor role.
 
+##### Work Flow
+
 ---
 
 #### What cloud technologies have you used or are using now?I am familiar with Google Cloud, AWS, Firebase
 
 (Google owned). Currently we are using Microsoft Azure.
+
+##### Work Flow
 
 ---
 
@@ -145,86 +173,130 @@ I have experience deploying the applications in Azure with the help of few backe
 
 While I was working on my current project, as part of the video player integration I had to play a video file downloaded from a remote server, as the this was part of a migration project from jQuery to react, I took the part of the feature which involved integrating a web video player, to be honest I thought this was not complex initially as I did my research on the available libraries to play the video.. When I started integrating the video player with the sample video of same format I was able to play the video without a hitch but when I am trying to download the video from the URL the video player fails to load the video, my initial thoughts were the player is  not capable of playing a stream as it is downloading so I used a lazy loading view to completely download the video and then play it, still the player was not able to pick the steam and throws incompatible video format even though i am 100% sure the video format I am using is supported by the player.. But I had no clue what I was doing wrong and I could not find a related issue on the github repo where the player is hosted.. I switched to different players just to understand if the issue is with the player with the video being downloaded, I was unable to play the video in any available video players(not even on videojs which can play around 90% of the video formats). I ran out of options and I chose to use the existing JQuery video player though the library is deprecated and did not have an option to play the video at 1X, 2X, 5X playback speed which is the new requirement. Interestingly I was not able to play the video in the JQuery player, I dug through the huge code base and finally found that under the hood, the video codec has been altered after the video is downloaded to support it to play on the web player… all i had to do is to add a few params to the h264 video codec to merge audio and video before it is handed to the video player.. Finally I was able to run the video on the Videojs player with playback speed. I really leart about video formats and codec with this integration.
 
+##### Work Flow
+
 ---
 
 #### What is most complex piece of development you did so far ?
+
+##### Work Flow
 
 ---
 
 #### Do you like to work isolated or with a Team ? why ?
 
+##### Work Flow
+
 ---
 
 #### Is there a situation you asked help from the team ? How do you ask help from the team ?
+
+##### Work Flow
 
 ---
 
 #### What is something you learned in your current project that can help you to do better in your next project ?
 
+##### Work Flow
+
 ---
 
 ### Why React is better than other libraries ?
+
+##### Work Flow
 
 ---
 
 ### What unit testing libraries you have used ?
 
+##### Work Flow
+
 ---
 
 ### What is the greatest achievement in your project that received appreciation ?
+
+##### Work Flow
 
 ---
 
 ### Tell me about your recent project ?
 
+##### Work Flow
+
 ---
 
 ### Do you have experience with Java ?
+
+##### Work Flow
 
 ---
 
 ### What is the difference between git rebase and git merge ?
 
+##### Work Flow
+
 ---
 
 ### Is there a situation where you went above and beyond to get work done ?
+
+##### Work Flow
 
 ---
 
 ### Do you merge your code directly to the master ?
 
+##### Work Flow
+
 ---
 
 ### What is the release cycle you follow ?
+
+##### Work Flow
 
 ---
 
 ### What is remote debugging on Java on eclipse ?
 
+##### Work Flow
+
 ---
 
 ### if you do hot replace on java instance, how long does the code lasted ?
+
+##### Work Flow
 
 ---
 
 ### if you hot replace, will it override the classes immediately ?
 
+##### Work Flow
+
 ---
 
 ### What happens if I restart the instance on remote debugging ?.
+
+##### Work Flow
 
 ---
 
 ### What happens when you are struck, what do you do ?
 
+##### Work Flow
+
 ---
 
 ### What did you do if you worked on a feature and some other developer sent a PR to your code base as an improvement ?
+
+##### Work Flow
 
 ---
 
 ### Can you describe me a scenario where you were working on a bug and found that bug is caused by some other team completely unrelated to your team, how will you tackle this ?
 
+##### Work Flow
+
 ---
 
 ### How many team members ? how large of a team can you think you can do better ?
+
+##### Work Flow

@@ -91,21 +91,31 @@ Async function getData(){
 
 ### What is scope in javascript ?
 
+##### Javascript
+
 ---
 
 ### What is the difference between map, reduce, filter and forEach in javascript ?
+
+##### Javascript
 
 ---
 
 ### What is call and apply in javascript ?
 
+##### Javascript
+
 ---
 
 ### What is context in javascript ?
 
+##### Javascript
+
 ---
 
 ### What are event bubbling and event capture ?
+
+##### Javascript
 
 ---
 
@@ -149,11 +159,13 @@ Car.prototype.toString = function(){
 
 Above, a single instance of toString() will now be shared between all of the Car objects.
 
-2.
+##### Javascript
 
 ---
 
 ### What is this in a javascript ?
+
+##### Javascript
 
 ---
 
@@ -179,9 +191,13 @@ We can change the variable value from anywhere globally but to avoid exposing va
 
 The beauty of closure is that the closure can remember the last call value of the function even though the parent function has executed long back.
 
+##### Javascript
+
 ---
 
 ### What do you understand by prototype in Javascript ?
+
+##### Javascript
 
 ---
 
@@ -191,29 +207,43 @@ The beauty of closure is that the closure can remember the last call value of th
 // – ‘Hi’ = ?
 // – ‘1’ + 10 = ? and why ?
 
+##### Javascript
+
 ---
 
 ### How do you create classes in Javascript ?
+
+##### Javascript
 
 ---
 
 ### what are different ways you can create objects in javascript ?
 
+##### Javascript
+
 ---
 
 ### Is Javascript object oriented programming language ?
+
+##### Javascript
 
 ---
 
 ### What do you understand by call stack in Javascript ?
 
+##### Javascript
+
 ---
 
 ### What is event loop ?
 
+##### Javascript
+
 ---
 
 ### What is hoisting in javascript ?
+
+##### Javascript
 
 ---
 
@@ -222,11 +252,15 @@ The beauty of closure is that the closure can remember the last call value of th
 A Pure function is function which does not alter any variable values outside
 https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d49c
 
+##### Javascript
+
 ---
 
 ### What is ES6 ?
 
 https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/
+
+##### Javascript
 
 ---
 
@@ -251,14 +285,20 @@ Read more here:
 2. http://es6-features.org/#StringInterpolation
 3. https://github.com/lukehoban/es6features
 
+##### Javascript
+
 ---
 
 ### Difference between let and var ?
 
 https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable
 
+##### Javascript
+
 ---
 
 ### what is polymorphism and how it is achieved in javascript ?
 
 Polymorphism in Object-Oriented Programming is the ability to create a variable, a function, or an object that has more than one form
+
+##### Javascript

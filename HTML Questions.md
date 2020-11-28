@@ -8,9 +8,13 @@
 
 ### What is the difference between the HTML attribute and DOM property ?
 
+##### HTML
+
 ---
 
 ### Javascript,CSS can be added via CDN and local files, which one do you prefer ?
+
+##### HTML
 
 ---
 
@@ -20,8 +24,7 @@
 
 ```javascript
 <div id="a">
-	<div id="b">
-	</div>
+  <div id="b"></div>
 </div>
 ```
 
@@ -29,44 +32,43 @@
 
 ```javascript
 <div id="a">
-	<div id="b">
-		<div></div>
-	</div>
-	<div></div>
+  <div id="b">
+    <div></div>
+  </div>
+  <div></div>
 </div>
 ```
 
 ### The code below should do the job, except that for some reason it goes into an infinite loop. Fix the bugs.
 
 ```javascript
-    function appendChildren(decorateDivFunction) {
-      var allDivs = document.getElementsByTagName("div");
-      for (var i = 0; i < allDivs.length; i++) {
-        var newDiv = document.createElement("div");
-        decorateDivFunction(newDiv);
-        allDivs[i].appendChild(newDiv);
-      }
-    }
+function appendChildren(decorateDivFunction) {
+  var allDivs = document.getElementsByTagName("div");
+  for (var i = 0; i < allDivs.length; i++) {
+    var newDiv = document.createElement("div");
+    decorateDivFunction(newDiv);
+    allDivs[i].appendChild(newDiv);
+  }
+}
 
-    appendChildren(function(div) {});
+appendChildren(function (div) {});
 ```
 
-appendChildren is a recursive function and calls recursively until allDivs.length is less than i which never happens as function keep adding the div recursively. 
+appendChildren is a recursive function and calls recursively until allDivs.length is less than i which never happens as function keep adding the div recursively.
 
 The fix is to isolate the allDivs variable and hold the initial values without being updated someway, or instead of getting the updated html divs, we can get the querySelectorAll instead of getElementsByTagName so we only get the divs from the first iteration avoiding the loop
 
-A quick fix is to 
+A quick fix is to
 
 ```javascript
 function appendChildren(decorateDivFunction) {
   var allDivs = document.querySelectorAll("div");
   for (var i = 0; i < allDivs.length; i++) {
-     var newDiv = document.createElement("div");
-     decorateDivFunction(newDiv);
-     allDivs[i].appendChild(newDiv);
-   }
+    var newDiv = document.createElement("div");
+    decorateDivFunction(newDiv);
+    allDivs[i].appendChild(newDiv);
+  }
 }
 
-  appendChildren(function(div) {});
+appendChildren(function (div) {});
 ```
-
