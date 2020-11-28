@@ -355,6 +355,7 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 
 ### Difference between CSS and CSS3 ?
 
+<!--
 | CSS                                                      | CSS3                                                             |
 | -------------------------------------------------------- | ---------------------------------------------------------------- |
 | No rounder corners                                       | Achieved using border-radius                                     |
@@ -363,7 +364,7 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 | Only support for web safe fonts                          | Access to more designer fonts                                    |
 | Does not have modules - hence slow                       | Has modules - is faster                                          |
 
-https://www.upwork.com/hiring/development/css-vs-css3/
+https://www.upwork.com/hiring/development/css-vs-css3/ -->
 
 ##### CSS
 
