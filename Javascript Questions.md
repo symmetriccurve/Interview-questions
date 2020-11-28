@@ -62,6 +62,8 @@ To give you a more mental modal, think of swimming lanes and each swimmer is a p
 
 This might take a little while to sync in if you are new to promises
 
+##### Javascript
+
 ---
 
 ### What is Async and Await ?
@@ -87,6 +89,8 @@ Async function getData(){
 
 ```
 
+##### Javascript,Frequently Asked
+
 ---
 
 ### What is scope in javascript ?
@@ -97,25 +101,25 @@ Async function getData(){
 
 ### What is the difference between map, reduce, filter and forEach in javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
 ### What is call and apply in javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
 ### What is context in javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
 ### What are event bubbling and event capture ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -159,7 +163,7 @@ Car.prototype.toString = function(){
 
 Above, a single instance of toString() will now be shared between all of the Car objects.
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -191,13 +195,13 @@ We can change the variable value from anywhere globally but to avoid exposing va
 
 The beauty of closure is that the closure can remember the last call value of the function even though the parent function has executed long back.
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
 ### What do you understand by prototype in Javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -219,7 +223,7 @@ The beauty of closure is that the closure can remember the last call value of th
 
 ### what are different ways you can create objects in javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -243,7 +247,7 @@ The beauty of closure is that the closure can remember the last call value of th
 
 ### What is hoisting in javascript ?
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -285,7 +289,7 @@ Read more here:
 2. http://es6-features.org/#StringInterpolation
 3. https://github.com/lukehoban/es6features
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 
@@ -293,7 +297,7 @@ Read more here:
 
 https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable
 
-##### Javascript
+##### Javascript,Frequently Asked
 
 ---
 

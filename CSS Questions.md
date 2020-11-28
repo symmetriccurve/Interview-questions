@@ -72,7 +72,7 @@ Meaning: `fine powdery refuse or fragile perforated wood produced by the activit
 
 ### What is box modal ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
@@ -145,13 +145,13 @@ https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e
 
 ### What is the difference between display:none and display:hidden ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
 ### What is flex box ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
@@ -175,7 +175,7 @@ https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e
 
 ### What is your approach developing screen, do you first target larger screens or smaller screen ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
@@ -187,13 +187,13 @@ https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e
 
 ### What do you understand by responsive design ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
 ### How do you collaborate with UI/UX team ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 
@@ -361,7 +361,7 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 
 ### Advantages of using a a pre-processor like Sass ?
 
-##### CSS
+##### CSS,Frequently Asked
 
 ---
 

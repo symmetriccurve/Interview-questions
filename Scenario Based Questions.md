@@ -1,9 +1,9 @@
 ### How do you determine if a network call failed based on status code ?
 
-##### Javascript
+##### Scenario
 
 ---
 
 ### What is cors issue ? How did you resolve it ?
 
-##### Javascript
+##### Scenario
