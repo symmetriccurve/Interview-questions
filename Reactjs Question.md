@@ -1,5 +1,3 @@
-###### This page is constantly updated with new questions and answers( with better examples ). Please check back if you are unable to find an answer to a existing question or you can submit a new question [here](https://github.com/symmetriccurve/Interview-questions/issues/new/choose)
-
 ### Why React and not any other library ?
 
 Every web framework or library aims to mutate the DOM in most efficient way possible because DOM mutations are expensive.
