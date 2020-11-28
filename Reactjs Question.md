@@ -15,6 +15,8 @@ React solves this problem in a declarative way with a unidirectional approach, w
 
 The declarative ability of the React helps to focus on the data than on the View, which helps to build large single page applications with out to worry much about the how views would react to these changes.
 
+##### reactjs,scenario,javascript
+
 ---
 
 ### What do you mean when you say react is a view library ? or is React follows MVC architecture ?
@@ -23,6 +25,7 @@ A traditional MVC architecture has orchestration of Model, View and Controller. 
 (Learn more here on how controller plays in between view and model https://stackoverflow.com/a/1015853/3666700)
 While React only V(or view) in MVC. Unlike MVC where data flows back and forth, react has unidirectional data flow which means data flow is from the model to the view but not other way round.
 
+##### reactjs,scenario,javascript
 ---
 
 ### Do you have experience with JSX syntax ? or What is JSX ?
@@ -31,6 +34,7 @@ JSX stands for Javascript XML. XML stands for eXtensible Markup Language.
 JSX is a fancy syntax by facebook react team to write more readable and composable react components. It is a combination of HTML, CSS and Javascript.
 Component can also developed using plain vanilla javascript or typescript,. In case of JSX, we would just need extra transpiler configuration like babel to transpile the JSX to equivalent JS
 
+>>> reactjs
 ---
 
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
