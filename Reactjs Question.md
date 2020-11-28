@@ -13,7 +13,7 @@ React solves this problem in a declarative way with a unidirectional approach, w
 
 The declarative ability of the React helps to focus on the data than on the View, which helps to build large single page applications with out to worry much about the how views would react to these changes.
 
-##### Javascript
+##### ReactJs
 
 ---
 
@@ -23,7 +23,8 @@ A traditional MVC architecture has orchestration of Model, View and Controller. 
 (Learn more here on how controller plays in between view and model https://stackoverflow.com/a/1015853/3666700)
 While React only V(or view) in MVC. Unlike MVC where data flows back and forth, react has unidirectional data flow which means data flow is from the model to the view but not other way round.
 
-##### ReactJs,Javascript
+##### ReactJs
+
 ---
 
 ### Do you have experience with JSX syntax ? or What is JSX ?
@@ -32,7 +33,8 @@ JSX stands for Javascript XML. XML stands for eXtensible Markup Language.
 JSX is a fancy syntax by facebook react team to write more readable and composable react components. It is a combination of HTML, CSS and Javascript.
 Component can also developed using plain vanilla javascript or typescript,. In case of JSX, we would just need extra transpiler configuration like babel to transpile the JSX to equivalent JS
 
-##### CSS,ReactJs,Javascript
+##### ReactJs
+
 ---
 
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
@@ -110,6 +112,8 @@ ComponentDidCatch();
 
 This is a interesting component life cycle and is only triggered if the component fails to render and showing a fallback ui.
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### What is a State in a React ?
@@ -127,6 +131,8 @@ constructor(){
  }
 ```
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### Why to use React if there are so many frameworks available in the market ?
@@ -136,11 +142,15 @@ React has mechanism called a Virtual DOM which can optimize the mutations on the
 React makes writing Views Easier and Its component Based model helps to debug and Isolate the issues from data and views, and it’s extremely efficient because of virtual DOM.
 https://blog.syncano.io/reactjs-reasons-why-part-1/
 
+##### ReactJs
+
 ---
 
 ### How different is componentWillMount Vs ComponentDidMount ? (M)
 
 componentWillMount is called before the render is called and ComponentDidMount is called after the render.
+
+##### ReactJs, Frequently Asked
 
 ---
 
@@ -152,6 +162,8 @@ without a state it wasn’t possible make async actions in functional components
 
 There are other additional hooks like useContext, useRef, useMemo, useReducer for respective use cases.
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### What are the life cycle methods that are called on first render ?
@@ -161,11 +173,15 @@ ComponentWillMount
 Render
 ComponentDidMount
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### I would like to add a listener to my react component that will update the state whenever a event is emitted ? How do you add it ?
 
 I would add the listener in componentDidMount and remove the listener in ComponentWillUnmount. We have to make sure to remove the listener in ComponentWillUnmount as you say we are updating the state, updating a state on a un mounted component will show a error message
+
+##### ReactJs
 
 ---
 
@@ -174,6 +190,8 @@ I would add the listener in componentDidMount and remove the listener in Compone
 ComponentDidMount()
 https://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### Which component life cycle is called when Component receive new Props ?
@@ -181,6 +199,8 @@ https://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initia
 ComponentWillReceiveProps()
 
 Starting from React 16.3, this component is deprecated and replaced with `getDerivedStateFromProps`, unlike `ComponentWillReceiveProps`, `getDerivedStateFromProps` is called on the initial render.
+
+##### ReactJs
 
 ---
 
@@ -195,6 +215,8 @@ is called just before the render on every state or prop change.
 
 `ShouldComponentUpdate` can used to logically compare the above values and decide if a render is needed, if needed `ShouldComponentUpdate`should return `true` or else `false`
 
+##### ReactJs
+
 ---
 
 ### Do you know any other Libraries like React ?(React is a View Library so there are many. .)
@@ -202,11 +224,15 @@ is called just before the render on every state or prop change.
 https://github.com/infernojs/inferno
 http://riotjs.com/
 
+##### ReactJs
+
 ---
 
 ### I have Project A , Project B and Project C. I ask you to develop a reusable component to use across all my projects, and I use different styles in three different projects. How will you manage that inside your component ?
 
 I will allow a style prop to pass into the component, internally I will get the style object you passed into( As you know what styles you need to apply based on the project) and apply to my component. I will add in a default style to component and add a additional check is the style object is passed or not into the component, if not a default style will be applied. I can also parse through the style object you passed from defaultProps and validate for any missing css properties and through you a error or warning depending on how important is the style property.
+
+##### ReactJs, Scenario
 
 ---
 
@@ -214,17 +240,23 @@ I will allow a style prop to pass into the component, internally I will get the 
 
 I will have a state variable called showPassword, which is initially set to false. And on the render function on the Input of the password field on type Property I will throw in a ternary operator if showPassword true then return text if not password. and when user clicks on the eye icon, on every click I will negate the showPassword boolean value and also I will also use the same state variable to switch between open eye icon when password is visible and close eye icon when password is hidden.
 
+##### ReactJs, Scenario
+
 ---
 
 ### When would you use a Class Component over a Functional Component(Stateless Component)?
 
 If I need a state I would use a class component if not If the component solely depends on props passed into it I would use a functional component or ES6 stateless component.
 
+##### ReactJs, Frequently Asked
+
 ---
 
 ### What are keys in React?
 
 Keys in keys are especially used when mapping over a array to generate views, it would help the Virtual Dom to relocate this Children in the Real DOm and add changes/modification/mutations exactly.
+
+##### ReactJs
 
 ---
 
