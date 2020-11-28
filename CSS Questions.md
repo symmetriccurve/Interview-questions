@@ -355,17 +355,6 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 
 ### Difference between CSS and CSS3 ?
 
-<!--
-| CSS                                                      | CSS3                                                             |
-| -------------------------------------------------------- | ---------------------------------------------------------------- |
-| No rounder corners                                       | Achieved using border-radius                                     |
-| No Gradients                                             | Achieved using background: linear-gradient(white,black)          |
-| No Animated effects, achieved using JQuery or javascript | inbuild animation effects like shadow and animation interval etc |
-| Only support for web safe fonts                          | Access to more designer fonts                                    |
-| Does not have modules - hence slow                       | Has modules - is faster                                          |
-
-https://www.upwork.com/hiring/development/css-vs-css3/ -->
-
 ##### CSS
 
 ---
