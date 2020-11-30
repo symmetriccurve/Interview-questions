@@ -860,8 +860,18 @@ I recently learned React-testing-library to unit test react components, I very m
 
 ### As we need with authentication, we need secure the tokens somewhere in the App, how do you make sure these token are secure ?
 
-The easiest way is to use the Async storage which stores data in a key value pair. The problem with Async storage is that its nor encrypted so it wont suit your requirement.
-The other option is to use the react-native-keychain library which stores the passwords or keys in the securely in the keychain of IOS and keystore in Android. The security part will be managed by the operating system. So this is an approach that can be recommended for your requirement.
+The easiest way to store data in a app is to use the Async storage which stores data in a key value pair. But the problem with Async storage is that its not encrypted thought is it persistent.
+
+To overcome this issue, we can make use of platform specific options like keychain on iOS or keystore on Android. Since respective platforms have their own extra layer of protection around keychain and keystore the security part will be managed by the operating system itself, so we can confidently store the sensitive information here. Added, there are variety of libraries that abstract away the process of setting and getting values from these secured location, one I am familiar with react-native-keychain library.
+
+One thing to be noted though is that the older versions of Android do not have this concept of keystore and it is only available from API Level 23.
+
+Follow up question:
+then in that case, where can we store the token security for android versions before API Level 23.
+
+before Android introduced keystore, we used to store them in shared preference which is quite exposed to all the third party apps, to prevent this Android introduced keystore.
+
+Read More: https://resources.infosecinstitute.com/topic/android-hacking-security-part-9-insecure-local-storage-shared-preferences/
 
 ---
 
@@ -873,7 +883,11 @@ The other option is to use the react-native-keychain library which stores the 
 
 ---
 
-### What are the different authorization methods like oAuth you are familiar with ?
+### What are the different authentication methods like oAuth you are familiar with ?
+
+I have worked with ADAL(Active Directory Authentication Library - owned by microsoft) previously for multi factor authentications, but recently as microsoft has moved towards to MSAL(Microsoft Authentication Library) to provide access to personal accounts while retaining the same level os security.
+
+I also worked with OAuth authorization protocol that can use JWT as a token, which is added to the header on every request.
 
 ---
 
