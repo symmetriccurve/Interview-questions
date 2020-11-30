@@ -300,3 +300,65 @@ While I was working on my current project, as part of the video player integrati
 ### How many team members ? how large of a team can you think you can do better ?
 
 ##### Work Flow
+
+---
+
+### We do not have a defined set of requirements, you need to get the requirements, we do not have a BA to get you requirements ? How comfortable are you working independently ?
+
+##### Work Flow
+
+---
+
+### Tell us about a position where you were doing more than one job like Developer and Designer or Scrum master and Developer ?
+
+##### Work Flow
+
+---
+
+### What makes a really good UX design ?
+
+##### Work Flow
+
+---
+
+### Have you ever had a conflict with UX designer ?
+
+##### Work Flow
+
+---
+
+### Do you like to build the components from the scratch or use third party libraries ?
+
+##### Work Flow
+
+---
+
+### Have you ever contributed in to a common component library or worked with a factory team to provide common tools/libraries to other team?
+
+##### Work Flow
+
+---
+
+### What do you think of Agile methodology ?
+
+##### Agile
+
+---
+
+### How long is your sprint ?
+
+##### Agile
+
+---
+
+### Did you ever underestimated a user story ? How did you handle it ?
+
+##### Agile
+
+---
+
+### If you have build 7 features by the end of the sprint deadline and you can only build 4 of them, how do you communicate this to the scrum master or product owner ? or will you put extra hours to complete all the 7 features ?
+
+##### Agile
+
+---
