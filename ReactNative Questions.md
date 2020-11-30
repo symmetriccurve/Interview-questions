@@ -27,3 +27,15 @@ Learn more: https://www.youtube.com/watch?v=8N4f4h6SThc&t=8m40s&ab_channel=React
 ##### React Native, Scenario
 
 ---
+
+### Are you familiar with code signing on iOS and Android ?
+
+##### React Native, Scenario
+
+---
+
+### Can you talk to me a little about CI/CD pipeline on React Native ?
+
+##### React Native
+
+---
