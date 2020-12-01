@@ -39,3 +39,9 @@ Learn more: https://www.youtube.com/watch?v=8N4f4h6SThc&t=8m40s&ab_channel=React
 ##### React Native
 
 ---
+
+### Can you build common components that work on mobile and web ?
+
+##### React Native, ReactJs
+
+---
