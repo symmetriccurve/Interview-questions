@@ -24,13 +24,7 @@
 
 ### if there are 4 different web apps of a single company have four different businesses, do you think the UI should look same across all 4 apps or since type of business is different should they look different ?
 
-##### Scenario
-
----
-
-### if there are 4 different web apps of a single company have four different businesses, do you think the UI should look same across all 4 apps or since type of business is different should they look different ?
-
-##### Scenario
+##### Scenario, UX
 
 ---
 
