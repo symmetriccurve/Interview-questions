@@ -33,6 +33,8 @@ The simplest of all is to apply `text-align-center` to the wrapper element and `
 
 ##### CSS
 
+---
+
 ### Can you explain different position properties in CSS ?
 
 There are five different position values:
