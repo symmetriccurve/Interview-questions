@@ -1010,3 +1010,20 @@ I also worked with OAuth authorization protocol that can use JWT as a token, whi
 ### Difference between firebase and mongoDb ? when will you these any of these ?
 
 ---
+
+### Why have react imported on top of every component file even though when not used in creating a functional component ?
+
+##### ReactJs,React Native
+
+---
+
+### What is the differences between react version 14,version 15,version 16 and version 17 ?
+
+##### ReactJs
+
+---
+
+### Why hooks cannot be in conditions ?
+
+##### ReactJs
+
