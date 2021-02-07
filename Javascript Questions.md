@@ -306,3 +306,100 @@ https://stackoverflow.com/questions/762011/whats-the-difference-between-using-le
 Polymorphism in Object-Oriented Programming is the ability to create a variable, a function, or an object that has more than one form
 
 ##### Javascript
+
+---
+
+### What are iterators and generators in javascript ?
+
+##### Javascript
+
+---
+
+### Can you explain bind using call and apply ?
+
+##### Javascript
+
+---
+
+### What is eventloop in javascript ?
+
+##### Javascript
+
+---
+
+### What are observables in javascript ?
+
+##### Javascript
+
+---
+
+### What is the second argument passed into a reduce function ? how does that impact the return value of reduce function ?
+
+##### Javascript
+
+---
+
+### Take an array [1,2,3] and explain the each iterations of reduce function step by step ?
+
+##### Javascript
+
+---
+
+### Imagine there are two script files loaded on a web browser on file_one.js I declare a variable say a=10 and in the file_two.js I re-declare the variable var a=20 what is the current value of the variable when both scripts are loaded does it throw an error saying the variable is already decleared or does it override the value if it overrides how can we handle the override ?
+
+##### Javascript
+
+---
+
+### What is Lexical scope in javascript ?
+
+##### Javascript
+
+---
+
+### What is a weakmap in javascript ?
+
+##### Javascript
+
+---
+
+### What is the weak refernce in javascript ?
+
+##### Javascript
+
+---
+
+### What is a symbol in javascript give an example ?
+
+##### Javascript
+
+---
+
+### What are the primitive data types in javascript ?
+
+##### Javascript
+
+---
+
+### What happends when you set the value of setTime out to 0 ?
+
+##### Javascript
+
+---
+
+### Explain spread and destructuring in ES6 with examples ?
+
+##### Javascript
+
+---
+
+### What is hoisting and how does it imply to var and let ?
+
+##### Javascript
+
+---
+
+### What is Async and Await ? how does that differ from promises ?
+
+##### Javascript
+
