@@ -1024,3 +1024,19 @@ I also worked with OAuth authorization protocol that can use JWT as a token, whi
 I have integrated D3 charting library(Bar,Pie, Line) to build a admin dashboard to provide a very high level overview of the various system analytics and health checks, I am also familiar with integrative live charting using websockets to update the charts in real time. I have developed dashboards using vanilla version of D3 library and also with react-charts-d3 which uses D3 library under the hood. I am also familiar with highcharts which is a corporate version and alternative to D3.
 
 ---
+### Why have react imported on top of every component file even though when not used in creating a functional component ?
+
+##### ReactJs,React Native
+
+---
+
+### What is the differences between react version 14,version 15,version 16 and version 17 ?
+
+##### ReactJs
+
+---
+
+### Why hooks cannot be in conditions ?
+
+##### ReactJs
+
