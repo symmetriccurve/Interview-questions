@@ -94,6 +94,12 @@ Learn more: https://www.youtube.com/watch?v=8N4f4h6SThc&t=8m40s&ab_channel=React
 
 ---
 
-### Pleae talk us through your experience with build pipeline with respect to deploying your app to develop/test/prod environments ?
+### Please talk us through your experience with build pipeline with respect to deploying your app to develop/test/prod environments ?
+
+##### React Native
+
+---
+
+### What is a interaction manager and what is the benefit of using it ?
 
 ##### React Native
