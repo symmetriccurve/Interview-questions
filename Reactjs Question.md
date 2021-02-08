@@ -1040,3 +1040,66 @@ I have integrated D3 charting library(Bar,Pie, Line) to build a admin dashboard 
 
 ##### ReactJs
 
+---
+
+### How do you fetch data in ReactJs ?
+
+##### ReactJs,React Native
+
+---
+
+### What are the different components in Reactjs ?
+
+##### ReactJs,React Native
+
+---
+
+### When do you use Functional Component and when do you use a Class based component ? or How do you decide which component is right for your component implementation ?
+
+##### ReactJs,React Native
+
+---
+
+### Can you relate component life cycles in class based components to hooks in functional components ?
+
+##### ReactJs,React Native
+
+---
+
+### What is a getDerivedStateFromProps component life cycle do ?
+
+##### ReactJs,React Native
+
+---
+
+### Why should you use Arrow function in react components, can you avoid using them and still make the functionality work ?
+
+##### ReactJs,React Native
+
+---
+
+### Give few examples of Es6 features you used in React ?
+
+##### ReactJs,React Native
+
+---
+
+### Is React Unidirectional or bi directional ? how do you determine the direction ?
+
+##### ReactJs,React Native
+
+---
+
+### What is a HOC, give an example usage ?
+
+##### ReactJs,React Native
+
+---
+
+### Is React Unidirectional or Bi directional ? how do you determine the direction ?
+
+##### ReactJs,React Native
+
+
+
+
