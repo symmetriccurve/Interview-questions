@@ -400,11 +400,19 @@ https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367
 
 ---
 
-### Can you explain Redux on a Higher Level ?
+### Can you explain Redux on a high level ? or Can you explain redux flow ?
 
-When an Action is trigger by user interaction of network call or if by business logic, the Action carries optional payload and a action type which intern listened by all the reducers and a reducer having a corresponding action type creates a new state and returns.
+When an Action is dispatched by may be a user action like a click on a button or typing on an input field or may be network call action or it may be by business logic. 
 
-This updates the store with new state, and within the component. Redux is connected to Redux using Connect method from React-redux. There are two method associated or that are triggered when a store change happen. MapDispatchToProps and MapPropsToStates .MapPropsToStates pushes the new props and vire is updated accordingly.
+The Action dispatched has two parts in it, one is mandatory TYPE and another is optional PAYLOAD. 
+
+When store listens to this ACTION, it will pass down the ACTION to the all the reducers, each reducer will take this ACTION and look for TYPE and then re-create a NEW STATE based on previous STATE and return this NEW STATE.
+
+STORE is updated with NEW STATE received, and with in the component REDUX is connected to react components using CONNECT method from `react-redux` package.
+
+The CONNECT Method is a curry function which will take two arguments, of which second is optional. First is MAP-STATE-TO-PROPS function which will take the REDUX STORE and pass it to the components as PROPS, and the second argument is MAP-DISPATCH-TO-PROPS which will pass the ACTIONS so that the components can trigger the ACTION which continues the cycle.
+
+In a nut Shell, the flow is VIEW to ACTION, ACTION to STORE, STORE to VIEW.
 
 ##### ReactJs,Frequently Asked
 
@@ -1008,5 +1016,11 @@ I also worked with OAuth authorization protocol that can use JWT as a token, whi
 ---
 
 ### Difference between firebase and mongoDb ? when will you these any of these ?
+
+---
+
+### Do you have any experience working with Charts ?
+
+I have integrated D3 charting library(Bar,Pie, Line) to build a admin dashboard to provide a very high level overview of the various system analytics and health checks, I am also familiar with integrative live charting using websockets to update the charts in real time. I have developed dashboards using vanilla version of D3 library and also with react-charts-d3 which uses D3 library under the hood. I am also familiar with highcharts which is a corporate version and alternative to D3.
 
 ---
