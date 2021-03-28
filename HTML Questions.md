@@ -72,3 +72,23 @@ function appendChildren(decorateDivFunction) {
 
 appendChildren(function (div) {});
 ```
+
+---
+
+### How can you make a html input tag just to take numbers without any javascript ?
+
+##### HTML
+
+---
+
+### What is a docType in HTML file ? what happens if I do not use it ?
+
+##### HTML
+
+---
+
+### What is a render tree ? 
+
+##### HTML
+
+

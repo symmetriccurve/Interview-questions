@@ -45,3 +45,61 @@ Learn more: https://www.youtube.com/watch?v=8N4f4h6SThc&t=8m40s&ab_channel=React
 ##### React Native, ReactJs
 
 ---
+
+### How do you deploy your react native application to testing environment and how does QA team get your app to test ?
+
+##### React Native
+
+---
+
+### Pleae talk us through your experience with build pipeline with respect to deploying your app to develop/test/prod environments ?
+
+##### React Native
+
+---
+
+### What is the advantage of using Hybrid mobile technology instead of Native approach ?
+
+##### React Native
+
+---
+
+### Can I use React Native for building gaming application ?
+
+##### React Native
+
+---
+
+### How can i secure sensitive data in the react native app ?
+
+##### React Native
+
+---
+
+### Have you worked on Push notifications, please explain your experience ?
+
+##### React Native
+
+---
+
+### What is the disadvantage of using React Native over Native ?
+
+##### React Native
+
+---
+
+### Have you worked on shared component libraries, if so what were the chanlleges involved ?
+
+##### React Native
+
+---
+
+### Please talk us through your experience with build pipeline with respect to deploying your app to develop/test/prod environments ?
+
+##### React Native
+
+---
+
+### What is a interaction manager and what is the benefit of using it ?
+
+##### React Native
