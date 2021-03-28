@@ -16,6 +16,11 @@ The declarative ability of the React helps to focus on the data than on the View
 ##### ReactJs
 
 ---
+### What is VDOM in React ?
+
+VDom or a virtual DOM is exact copy of real HTML dom except it is built as javascript objects with key and values that map to the real DOM nodes, when a change occurs or setState or newProps are detected by a react component, the react notifies the reconciliation algorithm about these change, the algorithm computes the most efficient way to batch this changes to the real dom so the UI updates are faster and are in sync with Data.
+
+---
 
 ### What do you mean when you say react is a view library ? or is React follows MVC architecture ?
 
@@ -27,11 +32,25 @@ While React only V(or view) in MVC. Unlike MVC where data flows back and forth, 
 
 ---
 
+### What is a controlled vs uncontrolled component ? where do you use one over the other ?
+
+A uncontrolled component is any html input component let's say text input, select or may be a checkbox, if the state of the element is maintained by the DOM which I mean on the browser DOM then I would say that as uncontrolled component as we do not have the control over the dom state, but lets say if I would maintain the state of the element inside a react component state and add handler to update the state of the element then I say that as a controlled component.
+
+Simply, 
+state maintained by DOM - uncontrolled component 
+state maintained by React Component  - controlled component 
+
+Basically we create controlled components to add some validation on the input, like may be avoid typing alphabets into a phone number field or only check the checkbox if certain criteria is met.
+
+##### ReactJs, React Native
+
+---
+
 ### Do you have experience with JSX syntax ? or What is JSX ?
 
 JSX stands for Javascript XML. XML stands for eXtensible Markup Language.
 JSX is a fancy syntax by facebook react team to write more readable and composable react components. It is a combination of HTML, CSS and Javascript.
-Component can also developed using plain vanilla javascript or typescript,. In case of JSX, we would just need extra transpiler configuration like babel to transpile the JSX to equivalent JS
+Component can also developed using plain vanilla javascript or typescript,. In case of JSX, we would just need extra transpiler configuration like babel to transpile the JSX to equivalent JS so all browsers can compile.
 
 ##### ReactJs
 
@@ -39,78 +58,55 @@ Component can also developed using plain vanilla javascript or typescript,. In c
 
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
 
-Every component in react undergoes three phases,
-Initialization phase, updating phase, unmounting phase.
+Every component in react undergoes 3 Stages,
+--------------------------------
 
-**_On INITIALIZATION PHASE we have:_**
+Mounting Stage - Updating Stage - Un-Mounting Stage.
 
-```javascript
-Constructor; //Using ES6 Syntax
-getInitialState; // Using ES5 Syntax
-```
+on Mounting Stage we have Constructor if using ES6 Syntax or Get-Initial-State if using ES5 Syntax, Both of the methods are used to set the initial state of the component.
 
-Both of this methods sets the initial state of the component, [Read more](https://stackoverflow.com/a/30668609)
+After constructor we have Component-Will-Mount which is removed after the introduction of Get-derived-state-from-props, this was where we used to mutate the state before render kicks off. 
 
-```javascript
-ComponentWillMount;
-```
+After Component-Will-Mount or Get-derived-state-from-props we have Render function which is the core of the React Library which must be a pure function which returns the View that will be rendered on the DOM.
 
-_This is a depricated component life cycle and this is replaced with **getDerivedStateFromProps**_
-We use this to update the state even before UI Elements shows up on DOM
+Follow up: 
+What is Pure Function ?
+A Pure function is a function which does not have any side effects(side effects: like data fetching.
 
-```javascript
-Render;
-```
+After Render we have component-did-mount, which is used to make async calls and update the state, when state is updated render function is triggered again with new updated state data and that is how we update the View.
 
-The return of this function is what is seen on the UI, it returns Views wrapped inside a single div( Follow up Question: What do you mean by single div, can we not return multiple divs, go to (1A) )
+So the sequence of life cycles on Mounting Stage is 
 
-On the **_UPDATING PHASE_** we have:
+Constructor => Component-Will-Mount => Render => Component-Did-Mount
 
-```javascript
-ComponentWillReceiveProps;
-```
+--------------------------------
+After the mounting stage, if we set a new State or the component Receives a new set of properties which are different than the initial set of properties, then the View will undergo a Updating Stage.
 
-_This is a deprecated component life cycle and this is replaced with **getDerivedStateFromProps**_
-Every time a component receives new set of props, this component life cycle is triggered with a argument which are new set of props
+When a new set of properties are received by the component then get-derived-states-from-props is triggered but in earlier versions of react we used to have component-will-receive-props, which will trigger with new set of properties, in cases where you want to store the props in the State, then you get a chance to update the state based on new props
 
-```javascript
-getDerivedStateFromProps;
-```
+Similarly if the state is updated within the component then should-component-update will be triggered and this is the most power ful component life cycle in React Library, this component life cycle decides if the Component should re-render or not, since render is expensive operation we should conditionally return true or false based on new state and new props. A lot of legacy react applications do not have this component life cycle which the UI bit slow.
+
+if the should-component-update returns true then get-snapshot-before-update to capture any information related to previous props or previous state. this is rarely used component life cycle, after which render will be triggered followed up component-did-update
+
+--------------------------------
+then finally un-mounting stage, 
+
+We have only one component life cycle method component-will-unmount which we use it to cleaning up things like 1. closing the socket connection if established any previously in component-did-mount or 
+2. remove the listeners if added any 
+3. clearing the timers etc
+
+
+--------------------------------
+We have one other interesting component lifecycle method which is component-did-catch when a component fails any where between the stages, this is invoked immediately to set the state of the component to error and the on the render we conditionally show a fallback UI and log the error somewhere to investigate why the component failed to render, this type of handling the error and showing the fallback UI is called error boundary in react books.
+
+--------------------------------
+Additional Explanations:
+
+if the should-component-update returns true then a component-will-update(which is now removed from react) is called to notify that render is about to start, this is much usual in animations UI where there are transition or fading effects and the component-will-update starts the animation
+
+after component-will-update render is called immediately and then component-did-update is called to notify the render cycle is complete, this is used to stop the animation we started earlier. this is just an example use case though.
 
 This component life cycle is the new addition **React 16.3**, this behaves a as combination of componentWillMount and ComponentWillReceiveProps, means this component life cycle is trigger both on the initial render and subsequent renders
-
-```javascript
-ShouldComponentUpdate;
-```
-
-This component life cycle when used appropriately will avoid any unnecessary renders of the component(Follow up Question: What do you mean by unnecessary renders), depending on the business logic it might return true or false, if it returns true a render will be triggered, if not render is avoided.
-
-```javascript
-ComponentWillUpdate;
-```
-
-_This is a depricated component life cycle_ .
-If ShouldComponentUpdate returns _true_ componentWillUpdate is triggered
-
-```javascript
-ComponentDidUpdate;
-```
-
-ComponentDidUpdate is called after the Render
-
-**_On the UNMOUNTING PHASE_** we have:
-
-```javascript
-ComponentWillUnmount;
-```
-
-Is called when component is about to be unmounted from DOM
-
-```javascript
-ComponentDidCatch();
-```
-
-This is a interesting component life cycle and is only triggered if the component fails to render and showing a fallback ui.
 
 ##### ReactJs,Frequently Asked
 
@@ -118,7 +114,7 @@ This is a interesting component life cycle and is only triggered if the componen
 
 ### What is a State in a React ?
 
-A state is nothing but a javascript object to determine the behavior of the component, every time a state change happen in fact a prop change happen, a render is triggered or UI is re-rendered.
+A state is nothing but a javascript object to determine the behavior of the component, every time a state change happen in fact a prop change happen, a render function is triggered or UI is re-rendered.
 
 Creating a state
 
@@ -146,9 +142,9 @@ https://blog.syncano.io/reactjs-reasons-why-part-1/
 
 ---
 
-### How different is componentWillMount Vs ComponentDidMount ? (M)
+### How different is componentWillMount Vs component-did-mount ? (M)
 
-componentWillMount is called before the render is called and ComponentDidMount is called after the render.
+componentWillMount is called before the render is called and component-did-mount is called after the render.
 
 ##### ReactJs,Frequently Asked
 
@@ -156,7 +152,7 @@ componentWillMount is called before the render is called and ComponentDidMount i
 
 ## What are hooks in react ?
 
-From React 16.8, react team introduced a new concept hooks which helps to hook features to functional components, earlier to hooks it wasn’t possible to add a state into a functional components and the only way is to translate the stateless or functional component to class component to introduce state, with introduction of hooks a useState hook can be use to add state in to functional components.
+From React 16.8, react team introduced a new concept hooks which helps to hook features to functional components, before introduction of hooks it wasn’t possible to add a state into a functional components and the only way is to translate the stateless or functional component to class component to introduce state, with introduction of hooks a useState hook can be use to add state in to functional components.
 
 without a state it wasn’t possible make async actions in functional components, so another hook Called useEffect is introduced to make async calls, with combination of useState and useEffect a functional component can be full blown react component with data fetching capabilities.
 
@@ -165,13 +161,17 @@ There are other additional hooks like useContext, useRef, useMemo, useReducer fo
 ##### ReactJs,Frequently Asked
 
 ---
+## What is UseEffect hook ?
 
-### What are the life cycle methods that are called on first render ?
+From React 16.8, react team introduced a new concept hooks which helps to hook features to functional components, as part of which UseEffect is introduced to do side effects in functional components.
 
-Constructor
-ComponentWillMount
-Render
-ComponentDidMount
+Basically it works as a combination of component-will-mount, component-will-receive-props and component-will-unmount.
+
+UseEffect will be triggered both on the initial render and on the subs secretive renders.
+
+Second argument in the useEffect uses a array of dependencies which are the properties of the component if any of the properties change useEffect will be triggered again when you do not want this useEffect to be triggered you can pass an empty array as a second argument.
+
+UseEffect can return a function which will be called before the component is unmounted which is equal to component-will-unmount this is useful when you want to remove the socket connection or remove the listeners of the component if you have added previously.
 
 ##### ReactJs,Frequently Asked
 
@@ -179,16 +179,26 @@ ComponentDidMount
 
 ### I would like to add a listener to my react component that will update the state whenever a event is emitted ? How do you add it ?
 
-I would add the listener in componentDidMount and remove the listener in ComponentWillUnmount. We have to make sure to remove the listener in ComponentWillUnmount as you say we are updating the state, updating a state on a un mounted component will show a error message
+I would add the listener in component-did-mount and remove the listener in Component-Will-Unmount. We have to make sure to remove the listener in Component-Will-Unmount as you say we are updating the state, updating a state on a un mounted component will show a error message
+
+##### ReactJs
+
+---
+### Have you used a context API will you use a context API or redux?
+
+context API is used to avoid the prop drilling in react components what I mean by that is if a property has to be send to a grandchild it has to be drilled through the child but context API will provide a mechanism where you can deliver the props directly to the grand child.
+
+API uses a consumer and a provider and interestingly a consumer will always listen to the nearest provider in the component hierarchy.
+
+Even though context API exist I think I would still use the redux because debugging is a lot easier in redux but I will use the context API in places like themes or user preferences for menu items which should be threaded to every component. But data handling I would have redux.
 
 ##### ReactJs
 
 ---
 
-### Which life cycle method do you prefer to make a network call ?(M)
+### Which life cycle method do you prefer to make a network call and why?(M)
 
-ComponentDidMount()
-https://stackoverflow.com/questions/41612200/in-react-js-should-i-make-my-initial-network-request-in-componentwillmount-or-co
+if redux is not in place and I have to make the API calls I will do it in Component did mount because this is the component lifecycle that is called after the render so I can definitely guarantee that set state done in component-did-mount will trigger another render. In earlier versions of React I mean when React got first introduced a lot of React developers used to do network calls in component will mount which resulted in setting a state but since the render is not called as part of the set state but is called as part of the React component lifecycle triggering hierarchy so there is a high chance that a stale state is been rendered
 
 ##### ReactJs,Frequently Asked
 
@@ -221,6 +231,8 @@ is called just before the render on every state or prop change.
 
 ### Do you know any other Libraries like React ?(React is a View Library so there are many. .)
 
+Vuejs, inferno, riotjs
+
 https://github.com/infernojs/inferno
 http://riotjs.com/
 
@@ -252,9 +264,35 @@ If I need a state I would use a class component if not If the component solely d
 
 ---
 
+### When do you use a functional component vs class based component ?
+
+With the introduction of hooks I think I would almost always use the functional components I cannot think of a use case where I would need a class based component where I can use a functional components with Hooks.
+
+Before the introduction of hooks a class based components gets its value in places where I would need a state variable or to do an API fetching or to add socket subscriptions.
+
+##### ReactJs,Frequently Asked
+
+---
+
+### Have you used sockets previously ?
+
+I have used socket connections in a project where I have to track the current location of a GPS device.
+Usually we attach the socket on the component did mount and remove the socket connection in component will unmount.
+
+##### ReactJs,Frequently Asked
+
+---
+
 ### What are keys in React?
 
 Keys in keys are especially used when mapping over a array to generate views, it would help the Virtual Dom to relocate this Children in the Real DOm and add changes/modification/mutations exactly.
+
+##### ReactJs
+
+---
+### When do you use Redux and not use Redux?
+
+If the application do not require a props drilling which means I do not have to pass the props to the grand children and then to the grand children then in that case I would not use the redux as it would be a overkill to use redux in such a small application but in applications where there is a complex state and a lot of state manipulation goes I would use the redux
 
 ##### ReactJs
 
@@ -265,6 +303,12 @@ Keys in keys are especially used when mapping over a array to generate views, it
 A state can only happen through setState because it chains other set states previously called so that the state is mutated once at a time.
 To know is the setState happen, we can pass in a second argument inside the setState kinda callback which is called only after the setState is called.
 
+##### ReactJs
+
+---
+##### Is setState synchronous or asynchronous ?
+
+A set state in React is in asynchronous call because under the hood React uses reconciliation algorithm to  compute the best way to update the DOM which is asynchronous and this is the reason we have a second argument in the set state which is a callback function to read the state which is set, There are very high chances that trying to read a state variable immediately after the set state will give us a stale or old state if not accessed within a callback function
 ##### ReactJs
 
 ---
@@ -412,7 +456,7 @@ STORE is updated with NEW STATE received, and with in the component REDUX is con
 
 The CONNECT Method is a curry function which will take two arguments, of which second is optional. First is MAP-STATE-TO-PROPS function which will take the REDUX STORE and pass it to the components as PROPS, and the second argument is MAP-DISPATCH-TO-PROPS which will pass the ACTIONS so that the components can trigger the ACTION which continues the cycle.
 
-In a nut Shell, the flow is VIEW to ACTION, ACTION to STORE, STORE to VIEW.
+In a nut shell, the flow is VIEW to ACTION, ACTION to STORE, STORE to VIEW.
 
 ##### ReactJs,Frequently Asked
 
@@ -558,7 +602,7 @@ https://stackoverflow.com/questions/34958775/why-should-objects-in-redux-be-immu
 
 ### How do you fetch data in react ?
 
-With plain react, componentDidMount is the component life cycle where all the API calls go because this is called after the render and any setState after the render will trigger another setState.
+With plain react, component-did-mount is the component life cycle where all the API calls go because this is called after the render and any setState after the render will trigger another setState.
 
 Using redux,
 Since API calls are asynchronous, a middleware like redux-thunk or redux-saga is used to make async actions
@@ -590,6 +634,24 @@ const store = createStore(
 ##### Redux
 
 ---
+### Have you used redux saga ?
+
+Yes I have used read Sags in my previous application as well as in current application are redux-saga is a middleware which is as part of the Redux, it's a middleware which helps us to do a asynchronous actions like data fetching. 
+
+Under the hood redux Saga uses generator functions which have capabilities to pause the function execution and restart as needed, Each time a generator function is called it pauses at the first encountered yield at which we make async calls and when async call is completed we PUT the action which dispatches a ACTION object which is listened by the reducers to take appropriate state creation.
+
+Interesting part about Sagas is that they have abilities to drop repetitive actions if fired continuously using take-latest utility which works very similarly to debounce function in javascript.
+##### Redux
+
+---
+### What is a higher order component in React can you give me an example ?
+A higher order component is more like a design pattern than a feature from the Facebook I meant React. 
+
+In a nutshell a higher order component basically takes a base component and then returns a updated component Otherwise a H-O-C is a pattern to share logic across the components.
+
+For Example:
+Let's say I have two list components which basically gets the data from the two different APIs and but so same type of filtering on the list items, in that case I can create a HOC and move the filtering logic into HOC and have different View components for each List, infact I can also move the fetching the date into HOC with added API prop for the HOC.
+##### Redux
 
 ### What is server side rendering ?
 
@@ -678,7 +740,7 @@ I have integrated authentication using JWT and singleSignOn.
 ### I want to make a few API calls from react native, how can I achieve that?
 
 There are multiple ways to do this.
-`Approach 1:` If we are using a class-based component, we can make the api calls in the componentDidMount and update the state to trigger another render cycle with fetched data.
+`Approach 1:` If we are using a class-based component, we can make the api calls in the component-did-mount and update the state to trigger another render cycle with fetched data.
 `Approach 2:` If we are using a functional component, we can make an api calls by using useEffect() hook and update the state to trigger another render cycle with fetched data.
 `Approach 3:` If we are using the state management library like Redux, we can try fetching the data using middlewares like Redux Thunk or Redux Saga to trigger asynchronous action and update the store, which will update all the connected components.
 
@@ -820,7 +882,7 @@ I recently learned React-testing-library to unit test react components, I very m
 
 ---
 
-### Can I make API calls in componentWillMount instead of componentDidMount ?
+### Can I make API calls in componentWillMount instead of component-did-mount ?
 
 ---
 
@@ -861,8 +923,17 @@ I recently learned React-testing-library to unit test react components, I very m
 ### Do you deploy APK and IPA files to the testing environment like test-flight, hockey using Pipeline ?
 
 ---
+### What is localStorage and sessionStorage ? when do you use one over the other ?
 
-### As you know about recent CCPA(California consumer Privacy act) act effective from 2020, how do you make sure you are handling the data correct ?
+Both local storage and session storage are few megabytes of storage on browser.
+
+I would use local storage for non-sensitve data like user preferences like dark mode or light mode etc or may be understand if the user is visited very first on to the site to show some first time promotions etc.
+
+Local storage is retained as long as browser cache is retained
+
+while I will use session storage for sensitive information like user authentication token or data related to personal identified information etc. the session storage will be cleared as soon as a browser tab is closed.
+
+Local storage can be shared across multiple tabs of the browser while session storage cannot be shared which makes it more secured.
 
 ---
 
@@ -888,6 +959,12 @@ Read More: https://resources.infosecinstitute.com/topic/android-hacking-security
 ---
 
 ### What is the most difficult component you build that you thought was easy initially both on react and React- native ?
+
+I can definitely say building a carousal component on the react was the toughest component that I built. I was easily able to build a component using a transform CSS property with all the functionality needed basically the way it works is to arrest the scroll of the view and only move the scroll programmatically using the Next and Previous buttons but the challenge surfaced when accessibility team reached out saying carousal component is scrollable when used with keyboard Tab Navigation and Next button never get disabled on the last slide and clicking on Next completely breaks the UI.
+
+I immediately know why it breaks the UI after the clicking the Next button on the last slide as it attempts to scroll beyond the viewport of the component which breaks the Math logic i did but I was not sure why the scroll is not arrested, I did my investigation and found accessibility engine scrolls to the next element in the DOM hierarchy and brings the HTML element in to the View Port if hidden which in my case the next slide was hidden so it scroll to bring it into the view port ditching the Scroll lock I did.
+
+So I had to go back and re implement the component and instead of hiding the next slides, I used visibility: none and logically render the slide and avoid the scroll view all to gather and and added CSS key frames for the scrolling effect animation. 
 
 ---
 
@@ -979,7 +1056,7 @@ I also worked with OAuth authorization protocol that can use JWT as a token, whi
 
 ---
 
-### What is the equivalent of componentDidMount in functional Components ?
+### What is the equivalent of component-did-mount in functional Components ?
 
 ---
 

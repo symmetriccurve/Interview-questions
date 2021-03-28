@@ -363,6 +363,20 @@ https://stackoverflow.com/questions/8554043/what-is-a-clearfix
 
 ### Advantages of using a a pre-processor like Sass ?
 
+I did actually use in multiple projects and it being my favorite way of writing the CSS so far, 
+
+SASS basically that lets you use variables, mathematical operations, mixins, loops, functions, imports, and other interesting functionalities that make writing CSS much more powerful and fun.
+
+If I can say advantages I would say: 
+
+1. Syntax Friendly - which means it lot easier to read and maintain the stylesheets
+2. Variables - you can pretty define variables for every little thing like colors, font-sizes even padding which makes easy to change theming in larger applications
+3. One Powerful thing about sass is the nested syntax which gives a visual hierarchy of the HTML semantics so it becomes naturally easy to maintain the styles 
+   
+I can go on about mixins which helps with avoid style repetition. 
+
+There was one disadvantage of using sass in early times where the inspecting the elements on the browser did not reveal the computed styles but I think they got it fixed with recent versions of sass.
+
 ##### CSS,Frequently Asked
 
 ---
