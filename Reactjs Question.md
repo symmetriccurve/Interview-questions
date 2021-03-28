@@ -59,7 +59,6 @@ Component can also developed using plain vanilla javascript or typescript,. In c
 ### What do you understand by Component Life Cycle in React OR Explain Component Life Cycle in React ?
 
 Every component in react undergoes 3 Stages,
---------------------------------
 
 Mounting Stage - Updating Stage - Un-Mounting Stage.
 
@@ -79,7 +78,6 @@ So the sequence of life cycles on Mounting Stage is
 
 Constructor => Component-Will-Mount => Render => Component-Did-Mount
 
---------------------------------
 After the mounting stage, if we set a new State or the component Receives a new set of properties which are different than the initial set of properties, then the View will undergo a Updating Stage.
 
 When a new set of properties are received by the component then get-derived-states-from-props is triggered but in earlier versions of react we used to have component-will-receive-props, which will trigger with new set of properties, in cases where you want to store the props in the State, then you get a chance to update the state based on new props
@@ -88,18 +86,14 @@ Similarly if the state is updated within the component then should-component-upd
 
 if the should-component-update returns true then get-snapshot-before-update to capture any information related to previous props or previous state. this is rarely used component life cycle, after which render will be triggered followed up component-did-update
 
---------------------------------
 then finally un-mounting stage, 
 
 We have only one component life cycle method component-will-unmount which we use it to cleaning up things like 1. closing the socket connection if established any previously in component-did-mount or 
-2. remove the listeners if added any 
-3. clearing the timers etc
+1. remove the listeners if added any 
+2. clearing the timers etc
 
-
---------------------------------
 We have one other interesting component lifecycle method which is component-did-catch when a component fails any where between the stages, this is invoked immediately to set the state of the component to error and the on the render we conditionally show a fallback UI and log the error somewhere to investigate why the component failed to render, this type of handling the error and showing the fallback UI is called error boundary in react books.
 
---------------------------------
 Additional Explanations:
 
 if the should-component-update returns true then a component-will-update(which is now removed from react) is called to notify that render is about to start, this is much usual in animations UI where there are transition or fading effects and the component-will-update starts the animation
@@ -306,7 +300,7 @@ To know is the setState happen, we can pass in a second argument inside the setS
 ##### ReactJs
 
 ---
-##### Is setState synchronous or asynchronous ?
+### Is setState synchronous or asynchronous ?
 
 A set state in React is in asynchronous call because under the hood React uses reconciliation algorithm to  compute the best way to update the DOM which is asynchronous and this is the reason we have a second argument in the set state which is a callback function to read the state which is set, There are very high chances that trying to read a state variable immediately after the set state will give us a stale or old state if not accessed within a callback function
 ##### ReactJs
@@ -653,6 +647,8 @@ For Example:
 Let's say I have two list components which basically gets the data from the two different APIs and but so same type of filtering on the list items, in that case I can create a HOC and move the filtering logic into HOC and have different View components for each List, infact I can also move the fetching the date into HOC with added API prop for the HOC.
 ##### Redux
 
+---
+
 ### What is server side rendering ?
 
 [Learn More](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4)
@@ -894,19 +890,15 @@ I recently learned React-testing-library to unit test react components, I very m
 
 ---
 
-### What happens if I do not specify any arguments to the useEffect how many times it is called ?
+### What happens if I do not specify any arguments to the useEffect how many times it is called ?, what happens if I pass empty array as an argument ?
 
----
-
-### what happens if I pass empty array as an argument ?
-
----
-
-### If I have to do some house keeping on the component, where should I do on useEffect?
+It will be called twice, both for before render and after render, if passed an empty array, will be triggered only once which is before the render
 
 ---
 
 ### How can we differentiate between prod and development environments ?
+
+using environment variables, which can be added to any repo using .env and setting them based on prod vs Developement
 
 ---
 
