@@ -34,7 +34,7 @@ _My Answer:_
 
 I think, may be he was right, since he build a lot of functionalities of the component, It might be harder for him to switch the gears in an production environment, he would definitely add a cognitive load on some one who have not used ES6 previously. I worked over an year with the team and I build a lot of my javascript skills based on the code comments from the very same senior developer. :D
 
-##### Work Flow
+##### Scenario
 
 ---
 
@@ -119,19 +119,19 @@ This constant check with QA team was setting back the team in terms of developme
 
 Learning from this, we are trying our best to create documentation📄 around the application as we build and focus adding more unit tests💼 testing the functionality🧪.
 
-##### Work Flow
+##### Scenario
 
 ---
 
 #### is there any time you under estimated a story ? and how did you handle the situation ?
 
-##### Work Flow
+##### Scenario
 
 ---
 
 #### What is your idle work environment ?
 
-##### Work Flow
+##### Scenario
 
 ---
 

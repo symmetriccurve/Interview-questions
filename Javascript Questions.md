@@ -1,4 +1,4 @@
-### Can you implement promise.race function ? (paypal)
+## Can you implement promise.race function ?
 
 This question is little tricky and needs thorough understanding of how promises work in javascript.
 The idea of promise.race is as simple as it sounds, it takes array of promises and puts race to all the promises and which ever wins the race will give the promise response first.
@@ -66,7 +66,7 @@ This might take a little while to sync in if you are new to promises
 
 ---
 
-### What is Async and Await ?
+## What is Async and Await ?
 
 javascript is single threaded programming language and it utmost important to not block the single thread available so we make use of promises in combinations of callback functions to execute asynchronous flow.
 
@@ -93,37 +93,37 @@ Async function getData(){
 
 ---
 
-### What is scope in javascript ?
+## What is scope in javascript ?
 
 ##### Javascript
 
 ---
 
-### What is the difference between map, reduce, filter and forEach in javascript ?
+## What is the difference between map, reduce, filter and forEach in javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What is call and apply in javascript ?
+## What is call and apply in javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What is context in javascript ?
+## What is context in javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What are event bubbling and event capture ?
+## What are event bubbling and event capture ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What are some design pattern you are familiar with ?
+## What are some design pattern you are familiar with ?
 
 https://addyosmani.com/resources/essentialjsdesignpatterns/book/#designpatternsjavascript
 
@@ -167,13 +167,13 @@ Above, a single instance of toString() will now be shared between all of the Car
 
 ---
 
-### What is this in a javascript ?
+## What is this in a javascript ?
 
 ##### Javascript
 
 ---
 
-### What is the output of the following code and why ?
+## What is the output of the following code and why ?
 
 ```javascript
 for (i = 1; i <= 5; ++i) {
@@ -187,7 +187,7 @@ for (i = 1; i <= 5; ++i) {
 
 ---
 
-### What are closures in Javascript ?
+## What are closures in Javascript ?
 
 A closure is a function inside a function, we use closure to create private variables. Let’s a we create a variable by var a = 10
 
@@ -199,13 +199,13 @@ The beauty of closure is that the closure can remember the last call value of th
 
 ---
 
-### What do you understand by prototype in Javascript ?
+## What do you understand by prototype in Javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What is the output of // ‘1’ + 2 + 6 = ?
+## What is the output of // ‘1’ + 2 + 6 = ?
 
 // 1 +3+7 +’10’ = ?
 // – ‘Hi’ = ?
@@ -215,43 +215,43 @@ The beauty of closure is that the closure can remember the last call value of th
 
 ---
 
-### How do you create classes in Javascript ?
+## How do you create classes in Javascript ?
 
 ##### Javascript
 
 ---
 
-### what are different ways you can create objects in javascript ?
+## What are different ways you can create objects in javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### Is Javascript object oriented programming language ?
+## Is Javascript object oriented programming language ?
 
 ##### Javascript
 
 ---
 
-### What do you understand by call stack in Javascript ?
+## What do you understand by call stack in Javascript ?
 
 ##### Javascript
 
 ---
 
-### What is event loop ?
+## What is event loop ?
 
 ##### Javascript
 
 ---
 
-### What is hoisting in javascript ?
+## What is hoisting in javascript ?
 
 ##### Javascript,Frequently Asked
 
 ---
 
-### What are pure functions ?
+## What are pure functions ?
 
 A Pure function is function which does not alter any variable values outside
 https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d49c
@@ -260,7 +260,7 @@ https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d4
 
 ---
 
-### What is ES6 ?
+## What is ES6 ?
 
 https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/
 
@@ -301,7 +301,7 @@ https://stackoverflow.com/questions/762011/whats-the-difference-between-using-le
 
 ---
 
-### what is polymorphism and how it is achieved in javascript ?
+## What is polymorphism and how it is achieved in javascript ?
 
 Polymorphism in Object-Oriented Programming is the ability to create a variable, a function, or an object that has more than one form
 
@@ -309,31 +309,31 @@ Polymorphism in Object-Oriented Programming is the ability to create a variable,
 
 ---
 
-### What are iterators and generators in javascript ?
+## What are iterators and generators in javascript ?
 
 ##### Javascript
 
 ---
 
-### Can you explain bind using call and apply ?
+## Can you explain bind using call and apply ?
 
 ##### Javascript
 
 ---
 
-### What is eventloop in javascript ?
+## What is eventloop in javascript ?
 
 ##### Javascript
 
 ---
 
-### What are observables in javascript ?
+## What are observables in javascript ?
 
 ##### Javascript
 
 ---
 
-### What is the second argument passed into a reduce function ? how does that impact the return value of reduce function ?
+## What is the second argument passed into a reduce function ? how does that impact the return value of reduce function ?
 
 ##### Javascript
 
@@ -351,37 +351,37 @@ Polymorphism in Object-Oriented Programming is the ability to create a variable,
 
 ---
 
-### What is Lexical scope in javascript ?
+## What is Lexical scope in javascript ?
 
 ##### Javascript
 
 ---
 
-### What is a weakmap in javascript ?
+## What is a weakmap in javascript ?
 
 ##### Javascript
 
 ---
 
-### What is the weak refernce in javascript ?
+## What is the weak refernce in javascript ?
 
 ##### Javascript
 
 ---
 
-### What is a symbol in javascript give an example ?
+## What is a symbol in javascript give an example ?
 
 ##### Javascript
 
 ---
 
-### What are the primitive data types in javascript ?
+## What are the primitive data types in javascript ?
 
 ##### Javascript
 
 ---
 
-### What happens when you set the value of setTime out to 0 ?
+## What happens when you set the value of setTime out to 0 ?
 
 ##### Javascript
 
@@ -393,13 +393,13 @@ Polymorphism in Object-Oriented Programming is the ability to create a variable,
 
 ---
 
-### What is hoisting and how does it imply to var and let ?
+## What is hoisting and how does it imply to var and let ?
 
 ##### Javascript
 
 ---
 
-### What is Async and Await ? how does that differ from promises ?
+## What is Async and Await ? how does that differ from promises ?
 
 ##### Javascript
 ---
@@ -648,12 +648,6 @@ what happens at the end of the sprint ?
 ---
 
 ## It’s over a year you are working from home, what do you thing have changed in terms of communication with team ?
-
-##### Scenario
-
----
-
-## Talk to me about your proudest moment as an Engineer/Developer ?
 
 ##### Scenario
 
