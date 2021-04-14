@@ -381,7 +381,7 @@ Polymorphism in Object-Oriented Programming is the ability to create a variable,
 
 ---
 
-### What happends when you set the value of setTime out to 0 ?
+### What happens when you set the value of setTime out to 0 ?
 
 ##### Javascript
 
@@ -402,4 +402,377 @@ Polymorphism in Object-Oriented Programming is the ability to create a variable,
 ### What is Async and Await ? how does that differ from promises ?
 
 ##### Javascript
+---
+## What is the difference between promise vs async await ?
 
+##### Javascript
+
+---
+
+## How prefetch vs preload different, when will you use one over the other ?
+
+##### Javascript
+
+---
+
+## What is the mechanism under redux ?
+
+##### Redux
+
+—--
+## How axios vs fetch differ, why most of them are moving towards axios recently ?
+because of interceptors
+
+##### Javascript
+
+---
+
+## Do you do any webpack config ?
+
+##### Webpack
+
+---
+
+## Remove duplicates from array using reduce.
+
+##### Javascript
+
+---
+
+## What is prototype ?
+
+##### Javascript
+
+---
+
+## What happens when you type www.google.com to the point when you see a page load on the browser ?
+
+##### Scenario
+
+---
+
+## What is the difference between flex and grid ?
+
+##### CSS
+
+---
+
+## How do you manage security in your web apps ?
+
+##### Javascript
+
+---
+
+## What is event loop ?
+
+##### Javascript
+
+---
+
+## What do you know about micro dependencies ?
+
+##### Javascript
+
+---
+
+## How do you expose a module from webpack globally ?
+
+##### Javascript
+
+---
+
+## Webpack micro frontend modules ?
+
+##### Javascript
+
+---
+
+## Difference between overloading and overriding javascript ?
+
+##### Javascript
+
+---
+
+## Can we do overriding in javascript ?
+
+##### Javascript
+
+---
+
+## If i have function that accept 3 arguments and function is triggered with 2 arguments what happens ?
+
+##### Javascript
+
+---
+
+## can you create custom events in javascript ?
+
+##### Javascript
+
+---
+
+## Before introduction of error boundary in Reactjs how did you manage to handle the error in the React Components ?
+
+##### ReactJs
+
+---
+
+## How do you handle responsiveness ?
+
+##### CSS
+
+---
+
+## em vs rem which one do you use and why ?
+
+##### CSS
+
+---
+
+## svg vs canvas, where do you use one over the other ?
+
+##### CSS
+
+---
+
+## Authentication and authorization difference ?
+##### Javascript
+---
+## scrum vs kanban, which agile you are familiar with ?
+
+##### Work Flow
+
+---
+
+## Experience with mongo db ?
+
+##### Javascript
+
+---
+
+## Functional programming principals ?
+
+##### Javascript
+
+---
+
+## Talk little bit about inheritance in javascript ?
+
+##### Javascript
+
+---
+
+## What is the difference between class vs prototypal inheritance ?
+
+##### Javascript
+
+---
+
+## Do you have experience working with structured teams or unstructured teams ?
+
+##### Scenario
+
+---
+
+## what approaches do you take taking web into mobile ?
+##### ReactJs
+
+---
+
+## Are you more comfortable with refined stories or crude stories where you need to gather requirements ?
+
+---
+
+Have you worked on handlebars ?
+
+##### ReactJs
+
+---
+
+Have you written server-side rendering vs client-side rendering more ?
+
+##### ReactJs
+
+---
+
+Have you worked on postman ? where do you use this ?
+
+##### Work flow
+
+---
+
+## Explain about a Authentication Mechanism that you worked on ?
+
+Talk about how do you get requirements ?
+
+##### Work flow
+
+---
+
+## Bit about development process ? How long is the sprint ?
+
+##### Work flow
+
+---
+
+## code review process?
+
+##### Work flow
+
+---
+
+## Git branching process ?
+
+##### Work flow
+
+---
+
+## talk about your environment ?
+
+what happens at the end of the sprint ?
+
+##### Work flow
+
+---
+
+## How frequent are your releases ?
+
+##### Work flow
+
+---
+
+## Have you got any experience bringing up to speed for a new developer of associate developer ?
+
+##### Scenario
+
+---
+
+## It’s over a year you are working from home, what do you thing have changed in terms of communication with team ?
+
+##### Scenario
+
+---
+
+## Talk to me about your proudest moment as an Engineer/Developer ?
+
+##### Scenario
+
+---
+
+## How do you override parent style from child style object ?
+
+##### CSS
+
+---
+
+## How do you handle name collisions on CSS ?
+
+##### CSS
+
+---
+
+## How do you reuse code in sass ?
+
+##### CSS
+
+---
+
+## What is your approach for a legacy application where you need to start cleaning up messy CSS.?
+
+##### CSS
+
+---
+
+## What was the most challenging part when integrating with authorization ?
+
+##### CSS
+
+---
+
+## Different between Angular vs React from your experience?
+
+##### React
+
+---
+
+## How do you create you react apps ? Do you use a cli or write your own boilerplate ?
+
+##### React
+
+---
+
+## Talk to me your journey with React ? what made you think you can excel in React ?
+
+##### React
+
+---
+
+## What is the difference between slice vs spread
+
+##### Javascript
+
+---
+
+## What is the difference between prototypal inheritance and classical inheritance ?
+
+##### Javascript
+
+---
+
+## How to avoid nested loops ? and why should we avoid it ?
+
+you can use HashMap to avoid nested loops ?
+
+##### Javascript
+
+---
+
+## What is semantic elements on HTML ? can you please name few ?
+
+##### HTML
+
+---
+
+## How semantic HTML helps in accessibility ?
+
+##### HTML
+
+---
+
+## Are you familiar with any other use case of media queries other than knowing the screen dimensions ?
+
+print document, hide elements
+
+##### CSS
+
+---
+
+## I hope you know about CSS specificity, in the same lines if I have a style for a element under class name .foo and have another class name .foo .bar both applied to the same element like class='foo bar', which style do you think will be applied is it .foo or .foo .bar selector ? why ?
+
+##### CSS
+
+---
+
+## Do you know anything about css selector points and how does they impact the styles ?
+
+##### CSS
+
+---
+
+## What is this keyword in javascript ?
+
+##### Javascript
+
+---
+
+## What does bind do exactly in javascript ?
+
+##### Javascript
+
+---
+
+## What are the different ways we can merge objects in javascript ?
+
+##### Javascript
+
+---

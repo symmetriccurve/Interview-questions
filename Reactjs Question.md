@@ -640,12 +640,10 @@ Interesting part about Sagas is that they have abilities to drop repetitive acti
 ---
 ### What is a higher order component in React can you give me an example ?
 A higher order component is more like a design pattern than a feature from the Facebook I meant React. 
+In a nutshell a higher order component basically takes a base component and returns a updated component.
 
-In a nutshell a higher order component basically takes a base component and then returns a updated component Otherwise a H-O-C is a pattern to share logic across the components.
-
-For Example:
-Let's say I have two list components which basically gets the data from the two different APIs and but so same type of filtering on the list items, in that case I can create a HOC and move the filtering logic into HOC and have different View components for each List, infact I can also move the fetching the date into HOC with added API prop for the HOC.
-##### Redux
+For Example, let's say I have two list components which basically gets the data from the two different APIs do some type of filtering to hide certain list items on the UI, if the both the lists have same business logic to hide the items, in that case I can create a HOC and move the filtering logic into HOC and have different base components injected into the HOC component and get a updated component with filtered items. Generally I would use a HOC where I need to re-use common business logic across all the components.
+##### ReactJs
 
 ---
 
@@ -1159,15 +1157,9 @@ I have integrated D3 charting library(Bar,Pie, Line) to build a admin dashboard 
 
 ---
 
-### What is a HOC, give an example usage ?
-
-##### ReactJs,React Native
-
----
-
 ### Is React Unidirectional or Bi directional ? how do you determine the direction ?
-
 ##### ReactJs,React Native
+---
 
 
 
