@@ -233,6 +233,8 @@ While I was working on my current project, as part of the video player integrati
 
 ### What is the difference between git rebase and git merge ?
 
+Git Rebase re-plays the commits of branch on top of the base branch by pointing the base to the new updated base and adding commits on top the new base so basically forward the head and then apply the changes but on the other hand git merge add the commits
+
 ##### Work Flow
 
 ---
@@ -244,6 +246,8 @@ While I was working on my current project, as part of the video player integrati
 ---
 
 ### Do you merge your code directly to the master ?
+
+When a new task is picked by a developer, he or she creates a new branch based off of develop branch with proper branch naming convention depending on whether it is fix or feature or hotfix etc appended with ticket number to help us to track back why this PR is created.After we complete the code work on the branch, we update tests, documentation etc depending on what we are changing and send a PR and tag the PR with initial review so it is reviewed by peer developers, once at-least 2 peer developers approve the PR we re tag the PR for ‘need final review’ which is reviewed by senior developers and leads.Once the PR is on the develop branch a jenkins job triggers updating the version number and deploys to the development environment, where we validate our changes and send over the fix to the QA team to quick validate on high level.. once we have the QA approval we move the ticker for ready for QA which is tested as part of regression when we make weekly releases.
 
 ##### Work Flow
 
