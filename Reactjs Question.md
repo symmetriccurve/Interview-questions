@@ -1075,6 +1075,7 @@ I also worked with OAuth authorization protocol that can use JWT as a token, whi
 ---
 
 ### What is API gateWay ?
+It helps to bind interfaces to the backend systems.
 
 ---
 
