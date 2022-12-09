@@ -113,3 +113,47 @@ Implementing Micro-front ends are the best proudest moment. There are several pa
 ##### Scenario
 
 ---
+### What steps do you take to make sure that your changes won't impact other people's work?
+
+Each scenario is different when in case if I am new the product, I will heavily rely on the unit tests and automation to capture it, in cases there are no unit tests or automation, I would share a sandbox URLs to other devs and take help from already existing devs to code review my changes, but having unit tests is 100% guarantee that I am not breaking anything, if they do not exist I would at least try to add some around the feature that I am integrating. 
+
+##### Scenario
+
+---
+
+### What steps do you take when you are working with a new tech you are not familiar with?
+I am more of a person prefer the code over the documentation, but don’t get me wrong. Documentation is good, but code helps me understand the implementation better and quickly learn. My approach I guess is pretty straight forward like I will google on why this technology exists and why problems does this solve then google every single keyword to get the fundaments right before the complex stuff, then create a small prototype based on my understanding. Make few recording as a reference material to quickly look for keywords and usage.. then obviously stack overflow is way to go.
+
+##### Scenario
+
+---
+
+##### Tell me about a time where you had finished all your work ?
+Usually I plan my sprint good enough depending on the complexity of the projects but there are certain instances where this happens, in those situations I try to help the other team mates to finish up there work or try to dig through the code and find any code improvements and spin tickets based on my finding, I would not fix them right away but create tech debt tickets with details to bring them in when we have capacity.
+
+##### Scenario
+
+---
+
+##### What do you do when you have a lot on your plate and someone helps you for help ?
+It depends on the situation, I will try to prioritise based on the urgency. Imagine I am building a new feature and someone come to me to help on a production issue, I would jump right on. But imagine if a dev is asking help for fixing an environment issue local to his machine, I would give him directions and move on with my stuff. So, it certainly depends.
+
+##### Scenario
+---
+
+##### Tell me about a time where you made a mistake, how did you overcome it?
+There was a situation when I had to create a Carousal component, I estimated to be a 3 pointer story but later ended up spending like 2 whole weeks. I badly underestimated the story as I thought how hard it can be to make a carousal component, but there was a catch that not all the carousal components are of same size, basically they were images consumed from social media networks, these come in different sizes. That was one part of the challenge and another part was the accessibility is breaking as carousal should also be accessible with keyboard, I turned it in 3 days but spent like 2 more days fixing it and then I finally re-implemented it from the ground up with a different CSS transform approach. 
+
+##### Scenario
+---
+
+##### Tell me about a time you saw inefficiencies or problems, what steps do you take to fix them?
+Certainly not problems not I would say more of less optimised ways to do the stuff, mostly around the bundling and deploying process. Usually I would create a prototype on how this can be improved, the prototype helps me do 2 things at the same time. It gives me confidence that this can certainly be done and it helps to show the numbers how we can improve this. For example, the last project I worked with had a build time of 52 minutes and close to 25 minutes were spent on the unit tests, I introduces the parallel unit testing with Jenkins job running multiple job and then collect the coverage from various AWS instances and the unit testing dropped to 8 minutes, that is like 52 minutes to 35 minutes straight.
+
+##### Scenario
+---
+
+##### What does your ideal role look like?
+My ideal role is build tools that helps the other developers to move faster, I wanted to part of a horizontal team that helps to provide all the tooling required by the other teams to improve their velocity. It also helps me learn from multiple consumers of this tools/libraries. 
+
+##### Scenario
