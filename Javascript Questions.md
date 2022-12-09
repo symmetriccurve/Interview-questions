@@ -770,3 +770,27 @@ print document, hide elements
 ##### Javascript
 
 ---
+
+## How do promises work?
+
+A promise is simply a place holder for eventual completion of the task which is asynchronous in nature.A promise has 3 different states, fulfilled when promise is successfully completed or a rejected when promise fails for any reason.
+
+##### Javascript
+
+---
+
+## What is object destructuring ?
+
+Object Destructing helps to break the object and array and assign the values to individual variables, that is just one part of it. It was also helps to assign default values to variable that does not exist on the object/arrays/ 
+
+##### Javascript
+
+---
+
+## What is a spread operator ?
+
+A spread operator is three dot syntax, but actually deepening on the usage it is also called rest operator. The main difference between rest and spread is that the rest operator puts the rest of some specific user-supplied values into a JavaScript array. But the spread syntax expands iterables into individual elements.
+
+##### Javascript
+
+---
