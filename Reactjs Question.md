@@ -1162,6 +1162,21 @@ I have integrated D3 charting library(Bar,Pie, Line) to build a admin dashboard 
 ##### ReactJs,React Native
 ---
 
+### How do you usefffect?
+
+A useEffect is one of favourite hooks that combines the functionality of 3 different component life cycles in a class based components, componentDidMount, ComponentDidUpdate, componentWillUnmount. In a one liner as the keyword says, we use to do any kind of side effects in the component like getting the data from API, setting a listener or establishing a socket connection, the return function can be effectively used for cleanup which acts like compoentWillUnmount.
+
+##### ReactJs,React Native
+---
+### What does a react build do?
+
+React Build uses the in build scripts to package, bungle minified and uglified version of the bundle which can be readily deployed to any host server, we can go in detail on how we can reference the assets based on the environments by passing the build specific variables   
 
 
+##### ReactJs
+---
+### What's the difference between props and state?
 
+A state is a object inside a react component on which mutation are possible and props are injected in to the component externally by a parent component or a third party provider which are immutable - well technically there are mutable but it is against the rules of the React Paradigm to have one source of truth. 
+
+##### ReactJs,React Native
